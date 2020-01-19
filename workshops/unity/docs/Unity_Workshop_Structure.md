@@ -30,29 +30,48 @@ Basics
 * Value types vs Reference types & the **new** keyword
 * …
 
-### How to fix things
-* How to use the Console & read errors  
-  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/Console.html)
-* How to set up breakpoints  
-  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)
-* How to use the Profiler  
-  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/ProfilerWindow.html)
-* How to use the adb logcat Package to debug the Quest  
-  * [Link to Unity Documentation](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)
-* How to use development builds
-* How to Google
+### How to fix things  
+
+#### How to use the Console & read errors
+[Link To Unity Documentation](https://docs.unity3d.com/Manual/Console.html)  
+
+#### How to set up breakpoints  
+[Link To Unity Documentation](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
+
+#### How to use the Profiler  
+[Link To Unity Documentation](https://docs.unity3d.com/Manual/ProfilerWindow.html)  
+
+#### How to use the adb logcat Package to debug the Quest  
+[Link to Unity Documentation](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)  
+
+#### How to profile your built application
+[Link to Unity Documentation](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
+
+#### How to Google
+???
 
 VR
 ------------------------
 ### Intro to VR
 * Technologies
 * Guidelines for good VR experiences
-* …
 
-### The OVR namespace
-* OVRCamera
-* OVRInput
-* …
+### Oculus Unity Getting Started Guide
+[Link To Oculus Documentation](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
+
+### The OVR namespace  
+[Link To Scripting Reference Documentation](https://developer.oculus.com/reference/unity/1.43/)  
+
+### Input
+#### OVRInput
+[Link To Oculus Documentation](https://developer.oculus.com/documentation/unity/unity-ovrinput/)  
+#### OVRBoundary
+[Link To Oculus Documentation](https://developer.oculus.com/documentation/unity/unity-ovrboundary/)
+#### Hand Tracking  
+[Link To Oculus Documentation](https://developer.oculus.com/documentation/unity/unity-handtracking/)  
+#### Haptics  
+[Link To Oculus Documentation](https://developer.oculus.com/documentation/unity/unity-haptics/)
+
 
 Visuals
 ------------------------
