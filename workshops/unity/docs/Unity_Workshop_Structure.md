@@ -45,18 +45,18 @@ How to fix things
 
 ### [How to Google]()
 
-VR
+VR Basics
 ------------------------
+### Overview
+#### [VR Guidance and Best Practices by Oculus](https://developer.oculus.com/design/book-bp/)
+* [Vision](https://developer.oculus.com/design/bp-vision/)
+* [Locomotion](https://developer.oculus.com/design/bp-locomotion/)  
+* [User Input](https://developer.oculus.com/design/bp-userinput/)  
+* [Audio](https://developer.oculus.com/design/bp-audio/)  
+* [User Orientation and Positional Tracking](https://developer.oculus.com/design/bp-orientation-tracking/)  
+* [Rendering](https://developer.oculus.com/design/bp-rendering/)
+* [Additional Reading](https://developer.oculus.com/design/bp-reading/)
 
-### VR Guidance and Best Practices
-#### [Vision](https://developer.oculus.com/design/bp-vision/)
-#### [Locomotion](https://developer.oculus.com/design/bp-locomotion/)  
-#### [User Input](https://developer.oculus.com/design/bp-userinput/)  
-#### [Audio](https://developer.oculus.com/design/bp-audio/)  
-#### [User Orientation and Positional Tracking](https://developer.oculus.com/design/bp-orientation-tracking/)  
-#### [Rendering](https://developer.oculus.com/design/bp-rendering/)
-#### [Additional Reading](https://developer.oculus.com/design/bp-reading/)
----
 ### Oculus
 
 #### [Oculus Unity Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
@@ -78,7 +78,6 @@ VR
 ##### [Hand Tracking](https://developer.oculus.com/documentation/unity/unity-handtracking/)
 ##### [Haptics](https://developer.oculus.com/documentation/unity/unity-haptics/)
 
----
 
 ### Steam VR
 
@@ -117,7 +116,7 @@ VR
 * [Working with actions in the Editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#working-with-actions-in-the-editor)
 * [Troubleshooting actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#troubleshooting-actions)
 * [Creating a build](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#creating-a-build)
----
+
 Visuals
 ------------------------
 ### The Rendering Pipeline
@@ -155,6 +154,9 @@ Geometry
 * Mesh Basics
 * Mesh manipulation
 * Mesh from scratch
+
+Physics
+------------------------
 
 Data & Interop
 ------------------------
