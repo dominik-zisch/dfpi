@@ -30,31 +30,32 @@ Basics
 * Value types vs Reference types & the **new** keyword
 * …
 
-### How to fix things  
+How to fix things
+------------------------
 
-#### How to use the Console & read errors
-[Link To Unity Documentation](https://docs.unity3d.com/Manual/Console.html)  
+### [How to use the Console & read errors](https://docs.unity3d.com/Manual/Console.html)  
 
-#### How to set up breakpoints  
-[Link To Unity Documentation](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
+### [How to set up breakpoints](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
 
-#### How to use the Profiler  
-[Link To Unity Documentation](https://docs.unity3d.com/Manual/ProfilerWindow.html)  
+### [How to use the Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html)  
 
-#### How to use the adb logcat Package to debug the Quest  
-[Link to Unity Documentation](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)  
+### [How to use the adb logcat Package to debug the Quest](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)  
 
-#### How to profile your built application
-[Link to Unity Documentation](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
+### [How to profile your built application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
 
-#### How to Google
-???
+### [How to Google]()
 
 VR
 ------------------------
-### Intro to VR
-* Technologies
-* Guidelines for good VR experiences
+
+### VR Guidance and Best Practices
+#### [Vision](https://developer.oculus.com/design/bp-vision/)
+#### [Locomotion](https://developer.oculus.com/design/bp-locomotion/)  
+#### [User Input](https://developer.oculus.com/design/bp-userinput/)  
+#### [Audio](https://developer.oculus.com/design/bp-audio/)  
+#### [User Orientation and Positional Tracking](https://developer.oculus.com/design/bp-orientation-tracking/)  
+#### [Rendering](https://developer.oculus.com/design/bp-rendering/)
+#### [Additional Reading](https://developer.oculus.com/design/bp-reading/)
 ---
 ### Oculus
 
@@ -103,7 +104,19 @@ VR
 * [Conclusion](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#conclusion)  
 
 ##### [SteamVR Input](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)
-<ul class="level1 nav bs-docs-sidenav"><li><a href="#overview">Overview</a></li><li><a href="#video-version">Video version</a></li><li><a href="#downloading-the-plugin">Downloading the Plugin</a></li><li><a href="#steamvr-interaction-system">SteamVR Interaction System</a></li><li><a href="#the-steamvr-input-window">The SteamVR Input window</a></li><li><a href="#testing">Testing</a></li><li><a href="#adding-an-action">Adding an action</a></li><li><a href="#binding-actions">Binding actions</a></li><li><a href="#assigning-actions-in-the-editor">Assigning actions in the editor</a></li><li><a href="#working-with-actions-in-the-code">Working with actions in the code</a></li><li><a href="#working-with-actions-in-the-editor">Working with actions in the Editor</a></li><li><a href="#troubleshooting-actions">Troubleshooting actions</a></li><li><a href="#creating-a-build">Creating a build</a></li></ul>
+* [Overview](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#overview)
+* [Video version](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#video-version)
+* [Downloading the Plugin](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#downloading-the-plugin)
+* [SteamVR Interaction System](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#steamvr-interaction-system)
+* [The SteamVR Input window](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#testing)
+* [Testing](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#testing)
+* [Adding an action](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#adding-an-action)
+* [Binding actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#binding-actions)
+* [Assigning actions in the editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#assigning-actions-in-the-editor)
+* [Working with actions in the code](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#working-with-actions-in-the-code)
+* [Working with actions in the Editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#working-with-actions-in-the-editor)
+* [Troubleshooting actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#troubleshooting-actions)
+* [Creating a build](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#creating-a-build)
 ---
 Visuals
 ------------------------
