@@ -1,4 +1,4 @@
-Title: Unity Workshop Structure  
+V Title: Unity Workshop Structure  
 Authors: Adamopoulos George   
 Zisch Dominik  
 
@@ -31,12 +31,16 @@ Basics
 * …
 
 ### How to fix things
-* How to use the Console & read errors
-* How to set up breakpoints
-* How to use the Profiler
-* How to use the adb logcat + OVR Tools to debug the Quest
+* How to use the Console & read errors  
+  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/Console.html)
+* How to set up breakpoints  
+  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)
+* How to use the Profiler  
+  * [Link To Unity Documentation](https://docs.unity3d.com/Manual/ProfilerWindow.html)
+* How to use the adb logcat Package to debug the Quest  
+  * [Link to Unity Documentation](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)
 * How to use development builds
-* How to Google 
+* How to Google
 
 VR
 ------------------------
@@ -86,7 +90,7 @@ Geometry
 ------------------------
 * Mesh Basics
 * Mesh manipulation
-* Mesh from scratch 
+* Mesh from scratch
 
 Data & Interop
 ------------------------
