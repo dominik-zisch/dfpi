@@ -89,19 +89,9 @@ VR Basics
   * [Interaction System](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Interaction-System.html)  
   * [Skeleton Poser](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Skeleton-Poser.html)  
 
-#### The SteamVR namespace  
-[Link to SteamVR Scipting Reference Documentation](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
+#### [The SteamVR namespace](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
-#### User Input In SteamVR  
-##### [Skeleton Poser](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html)  
-* [Introduction](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#introduction)  
-* [Pose Editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#pose-editor)  
-* [Blending Editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#blending-editor)  
-* [Manual Behaviour](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#manual-behaviours)  
-* [Scaling](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#scaling)  
-* [Conclusion](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/Skeleton-Poser.html#conclusion)  
-
-##### [SteamVR Input](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)
+#### [User Input In SteamVR](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)
 * [Overview](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#overview)
 * [Video version](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#video-version)
 * [Downloading the Plugin](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#downloading-the-plugin)
