@@ -69,14 +69,13 @@ VR Basics
   * [Tutorial: Build Your First VR App](https://developer.oculus.com/documentation/unity/unity-tutorial/)  
   * [Other Resources](https://developer.oculus.com/documentation/unity/unity-resources/)
 
-#### The OVR namespace  
-[Link To Oculus Scripting Reference Documentation](https://developer.oculus.com/reference/unity/1.43/)  
+#### [The OVR namespace](https://developer.oculus.com/reference/unity/1.43/)  
 
-#### User Input in Oculus
-##### [OVRInput](https://developer.oculus.com/documentation/unity/unity-ovrinput/)
-##### [OVRBoundary](https://developer.oculus.com/documentation/unity/unity-ovrboundary/)
-##### [Hand Tracking](https://developer.oculus.com/documentation/unity/unity-handtracking/)
-##### [Haptics](https://developer.oculus.com/documentation/unity/unity-haptics/)
+#### [User Input in Oculus](https://developer.oculus.com/documentation/unity/unity-input/)
+* [OVRInput](https://developer.oculus.com/documentation/unity/unity-ovrinput/)
+* [OVRBoundary](https://developer.oculus.com/documentation/unity/unity-ovrboundary/)
+* [Hand Tracking](https://developer.oculus.com/documentation/unity/unity-handtracking/)
+* [Haptics](https://developer.oculus.com/documentation/unity/unity-haptics/)
 
 
 ### Steam VR
