@@ -7,10 +7,10 @@ Unity Workshop Resources
 
 Unity Basics
 ------------------------
-* [**GameObjects**](https://docs.unity3d.com/Manual/class-GameObject.html)
-* [**Transforms**](https://docs.unity3d.com/Manual/Transforms.html)
-* [**Constraints**](https://docs.unity3d.com/Manual/Constraints.html)
-* [**Components**](https://docs.unity3d.com/Manual/Components.html)
+### [GameObjects](https://docs.unity3d.com/Manual/class-GameObject.html)
+### [Transforms](https://docs.unity3d.com/Manual/Transforms.html)
+### [Constraints](https://docs.unity3d.com/Manual/Constraints.html)
+### [Components](https://docs.unity3d.com/Manual/Components.html)
   * [Creating and Using Scripts](https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html)
   * [Controlling GameObjects Using Components](https://docs.unity3d.com/Manual/ControllingGameObjectsComponents.html)
   * [The MonoBehaviour Class](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
