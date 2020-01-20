@@ -5,21 +5,20 @@ Zisch Dominik
 Unity Workshop Resources
 ========================
 
-Basics
+Unity Basics
 ------------------------
-### Basic Unity Ontology
 * [**GameObjects**](https://docs.unity3d.com/Manual/class-GameObject.html)
-* [**Components**](https://docs.unity3d.com/Manual/Components.html)
-* [**The MonoBehaviour  Class**](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
-  * [Creating and Using Scripts](https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html)
-  * [Controlling GameObjects Using Components](https://docs.unity3d.com/Manual/ControllingGameObjectsComponents.html)
 * [**Transforms**](https://docs.unity3d.com/Manual/Transforms.html)
 * [**Constraints**](https://docs.unity3d.com/Manual/Constraints.html)
+* [**Components**](https://docs.unity3d.com/Manual/Components.html)
+  * [Creating and Using Scripts](https://docs.unity3d.com/Manual/CreatingAndUsingScripts.html)
+  * [Controlling GameObjects Using Components](https://docs.unity3d.com/Manual/ControllingGameObjectsComponents.html)
+  * [The MonoBehaviour Class](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
+  * [Execution Order Of Event Functions](https://docs.unity3d.com/Manual/ExecutionOrder.html)
 
-
-
-### Programming Basics
-#### Stuff you should already know
+Programming Basics
+------------------------
+### Stuff you should already know
 * Variables
 * Functions
 * Classes
@@ -27,7 +26,7 @@ Basics
 * Conditionals
 * …
 
-#### Stuff you should know but probably don't
+### Stuff you should know but probably don't
 * Lists Vs Arrays in C#
 * Access modifiers (public, private, protected etc)
 * Inheritance (abstract, virtual, sealed, partial etc)
