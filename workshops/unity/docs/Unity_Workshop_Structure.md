@@ -1,8 +1,8 @@
-V Title: Unity Workshop Structure  
+Title: Unity Workshop Structure  
 Authors: Adamopoulos George   
 Zisch Dominik  
 
-Unity Workshop Structure
+Unity Workshop Resources
 ========================
 
 Basics
