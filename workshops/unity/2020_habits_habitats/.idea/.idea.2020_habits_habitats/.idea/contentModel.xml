@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\GeorgeAdamon\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\GeorgeAdamon\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_2020_habits_habitats.-415041993.00" t="ExcludeRecursive" />
+    <e p="C:\Users\GeorgeAdamon\Documents\GitHub\dfpi\workshops\unity\2020_habits_habitats" t="IncludeRecursive">
+      <e p="2020_habits_habitats.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="CubeSphere.cs" t="Include" />
+        <e p="ProceduralGrid.cs" t="Include" />
+        <e p="SphericalDistance.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
