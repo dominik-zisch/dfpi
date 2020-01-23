@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: Procedural
   m_Shader: {fileID: -6465566751694194690, guid: cf194710e6cc3f34395e79eb41908e18,
     type: 3}
   m_ShaderKeywords: 
@@ -79,5 +79,5 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _PosA: {r: -0.8299805, g: 0.55118394, b: 0.08560748, a: 0}
-    - _PosB: {r: -0.8299805, g: 0.55118394, b: 0.08560748, a: 0}
+    - _PosA: {r: 0, g: 0, b: 0, a: 0}
+    - _PosB: {r: 0, g: 0, b: 0, a: 0}
