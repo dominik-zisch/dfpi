@@ -9,7 +9,8 @@ public class ObjectPlacer : MonoBehaviour
     /// Reference to the object that will be instantiated
     /// </summary>
     public GameObject objectToPlace;
-    public GameObject objectToPreview;
+    public GameObject previewObject;
+
 
     /// <summary>
     /// Reference to the object that will be the parent of all instantiated objects
@@ -37,7 +38,6 @@ public class ObjectPlacer : MonoBehaviour
     Vector3 placementPoint;
     Vector3 placementDirection;
     RaycastHit[] hits;
-    GameObject previewObject;
 
     private Vector3 previousPoint;
     private Vector3 lastPlaced;
@@ -47,7 +47,7 @@ public class ObjectPlacer : MonoBehaviour
     void Start()
     {
         hits = new RaycastHit[1];
-        GeneratePreviewObject();
+
     }
     
     void Update()
@@ -100,11 +100,7 @@ public class ObjectPlacer : MonoBehaviour
         velocity = placementPoint - previousPoint;
         previousPoint = placementPoint;
     }
-
-    void GeneratePreviewObject()
-    {
-        previewObject = Instantiate(objectToPreview, transform);
-    }
+    
 
     void UpdatePreviewObject()
     {
