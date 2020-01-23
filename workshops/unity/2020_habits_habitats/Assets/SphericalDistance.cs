@@ -27,8 +27,8 @@ public class SphericalDistance : MonoBehaviour
         var v1 = A.position - transform.position;
         var v2 = B.position - transform.position;
 
-        var sv1 = v1.normalized * Radius;
-        var sv2 = v2.normalized * Radius;
+        var sv1 = v1.normalized ;
+        var sv2 = v2.normalized ;
 
         
         
