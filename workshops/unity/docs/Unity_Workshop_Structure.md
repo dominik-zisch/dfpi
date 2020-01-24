@@ -109,6 +109,14 @@ VR Basics
 * [Troubleshooting actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#troubleshooting-actions)
 * [Creating a build](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#creating-a-build)
 
+---
+---  
+
+Work in Progress  
+
+---
+---
+
 Visuals
 ------------------------
 ### The Rendering Pipeline
