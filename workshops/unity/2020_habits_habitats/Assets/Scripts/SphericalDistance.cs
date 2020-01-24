@@ -5,14 +5,17 @@ using UnityEngine;
 [ExecuteAlways]
 public class SphericalDistance : MonoBehaviour
 {
+    [Header("Object References")]
     public Transform A;
-
     public Transform B;
 
+    [Header("Parameters")]
+    [Range(0,10)]
     public float Radius;
-
+    
+    [Header("Read-Only")]
     public float GreatCircleDistance;
-
+    
     private MeshRenderer mr;
     
     void Start()
@@ -32,6 +35,7 @@ public class SphericalDistance : MonoBehaviour
         
         GreatCircleDistance = Mathf.Acos(Vector3.Dot(sv1, sv2));
         
+        // SETTING DATA TO THE SHADER
         mr.sharedMaterial.SetVector("_PosA", sv1);
         mr.sharedMaterial.SetVector("_PosB", sv2);
     }

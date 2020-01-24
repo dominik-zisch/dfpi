@@ -5,40 +5,35 @@ using UnityEngine;
 
 public class ObjectPlacer : MonoBehaviour
 {
+    [Header("Object references")]
     /// <summary>
     /// Reference to the object that will be instantiated
     /// </summary>
     public GameObject objectToPlace;
     public GameObject previewObject;
-
-
+    
     /// <summary>
     /// Reference to the object that will be the parent of all instantiated objects
     /// </summary>
     public Transform objectParent;
 
-    /// <summary>
-    /// Projection axis
-    /// </summary>
+    [Header("Raycasting options")]
+    public bool performRaycast;
     public Axis axis;
-
-    
-    public bool raycastWorld;
     public LayerMask raycastAgainst;
     
-    [Range(0,100)]
-    public float Distance;
-
-    [Range(0,10)]
-    public float Scale;
+    [Header("Placement Options")]
+    [Range(0,100)] public float placeAtDistance = 3;
+    [Range(0,10)] public float placeScaled = 1;
+    [Range(0, 100)] public float applyTangentialForce;
     
-    public float timeUntilNextPlacement;
-    public float distanceUntilNextPlacement;
+    [Range(0,2)] public float timeUntilNextPlacement = 0;
+    [Range(0,2)] public float distanceUntilNextPlacement = 1;
    
+    
     Vector3 placementPoint;
-    Vector3 placementDirection;
+    public Vector3 placementDirection;
     RaycastHit[] hits;
-
     private Vector3 previousPoint;
     private Vector3 lastPlaced;
     private Vector3 velocity;
@@ -54,6 +49,7 @@ public class ObjectPlacer : MonoBehaviour
     {
         var direction = Vector3.zero;
         
+        // Select Axis
         switch (axis)
         {
             case Axis.X:
@@ -70,35 +66,39 @@ public class ObjectPlacer : MonoBehaviour
                 break;
         }
         
+        // Generate Ray
         var ray = new Ray(transform.position, direction);
         
-        if (raycastWorld)
+        // Perform Raycast or Get manual distance
+        if (performRaycast)
         {
           Raycast(ray);
         }
         else
         {
-            placementPoint = ray.GetPoint(Distance);
+            placementPoint = ray.GetPoint(placeAtDistance);
             placementDirection = direction;
         }
 
+        // Try to place object
         if (Time.time > prevTime + timeUntilNextPlacement && (placementPoint-lastPlaced).magnitude > distanceUntilNextPlacement)
         {
             if (Input.GetKey(KeyCode.Space))
             {
-                PlaceObject(placementPoint, placementDirection, velocity, Scale);
+                PlaceObject(placementPoint, placementDirection, velocity * applyTangentialForce, placeScaled);
                 lastPlaced = placementPoint;
             }
-
-           
+            
             prevTime = Time.time;
         }
 
+        // Move child
         UpdatePreviewObject();
-        Debug.DrawRay(transform.position, direction*Distance);
         
         velocity = placementPoint - previousPoint;
         previousPoint = placementPoint;
+        
+        Debug.DrawRay(transform.position, direction*placeAtDistance);
     }
     
 
@@ -113,20 +113,21 @@ public class ObjectPlacer : MonoBehaviour
         var i = Physics.RaycastNonAlloc(ray, hits, 1000, raycastAgainst.value);
         if (i < 1) return;
         
-        Distance = (hits[0].point - transform.position).magnitude;
-        placementPoint = placementPoint *0.8f + 0.2f* hits[0].point;
-        placementDirection = placementDirection*0.8f + 0.2f* hits[0].normal;
+        placeAtDistance = (hits[0].point - transform.position).magnitude;
+        placementPoint = hits[0].point;
+        placementDirection =hits[0].normal;
     }
     
     void PlaceObject(Vector3 position, Vector3 direction, Vector3 tangent = default, float scale = 1)
     {
         var o = Instantiate(objectToPlace, objectParent);
         o.transform.position = position;
-        o.transform.forward = direction;
-        o.transform.up = tangent;
-        o.transform.localScale = Vector3.one* scale;
         
-        o.GetComponent<Rigidbody>().AddForce(tangent *10, ForceMode.Impulse);
+        o.transform.forward = direction;
+
+        o.transform.localScale *= scale;
+        
+        o.GetComponent<Rigidbody>().AddForce(tangent, ForceMode.Impulse);
         o.GetComponent<PointAttraction>().attractor = transform;
     }
 
