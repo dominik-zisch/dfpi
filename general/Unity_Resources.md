@@ -43,7 +43,6 @@ C# Programming Basics
 
 How to fix things
 ------------------------
-
 ### [How to use the Console & read errors](https://docs.unity3d.com/Manual/Console.html)  
 
 ### [How to set up breakpoints](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
@@ -54,7 +53,6 @@ How to fix things
 
 ### [How to profile your built application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
 
-### [How to Google](https://www.google.com/)
 
 VR Basics
 ------------------------
@@ -68,14 +66,6 @@ VR Basics
 * [Additional Reading](https://developer.oculus.com/design/bp-reading/)
 
 ### [Oculus Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
-
-  * [Compatibility & Version Requirements](https://developer.oculus.com/documentation/unity/unity-req/)  
-  * [Preparing for Android Development](https://developer.oculus.com/documentation/unity/unity-mobileprep/)  
-  * [Importing the Oculus Utilities Package](https://developer.oculus.com/documentation/unity/unity-import/)  
-  * [Building Android Applications](https://developer.oculus.com/documentation/unity/unity-build-android/)  
-  * [Unity Build Tools](https://developer.oculus.com/documentation/unity/unity-build-android-tools/)  
-  * [Tutorial: Build Your First VR App](https://developer.oculus.com/documentation/unity/unity-tutorial/)  
-  * [Other Resources](https://developer.oculus.com/documentation/unity/unity-resources/)
 
   * [**The OVR namespace**](https://developer.oculus.com/reference/unity/1.43/)  
 
