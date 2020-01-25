@@ -93,13 +93,6 @@ VR Basics
 
 #### [SteamVR Unity Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
 
-  * [Quickstart](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Quickstart.html)  
-  * [Render Models](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Render-Models.html)    
-  * [SteamVR Input](https://valvesoftware.github.io/steamvr_unity_plugin/articles/SteamVR-Input.html)    
-  * [Skeleton Input](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Skeleton-Input.html)  
-  * [Interaction System](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Interaction-System.html)  
-  * [Skeleton Poser](https://valvesoftware.github.io/steamvr_unity_plugin/articles/Skeleton-Poser.html)  
-
 #### [The SteamVR namespace](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
 #### [User Input In SteamVR](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
