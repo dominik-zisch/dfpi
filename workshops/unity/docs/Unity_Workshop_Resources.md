@@ -6,7 +6,12 @@ Unity Workshop Resources
 ========================
 Links to Other Resources
 ------------------------
-* [**George's "_Modern Computer Graphics Resources_"**](https://github.com/GeorgeAdamon/ModernComputerGraphicsResources)
+* [**George's _Modern Computer Graphics Resources_**](https://github.com/GeorgeAdamon/ModernComputerGraphicsResources)  
+* [**Ronja's Introduction to 2D Distance Functions**](https://www.ronja-tutorials.com/2018/11/10/2d-sdf-basics.html)  
+* [**Inigo Quilez's list of 2D Distance Functions**](https://www.iquilezles.org/www/articles/distfunctions2d/distfunctions2d.htm)  
+* [**Inigo Quilez's list of Useful Little Functions**](https://www.iquilezles.org/www/articles/functions/functions.htm)
+* [**The Famous Catlike Coding Tutorials**](https://catlikecoding.com/unity/tutorials/)
+
 
 Unity Basics
 ------------------------
