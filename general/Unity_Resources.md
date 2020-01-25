@@ -77,13 +77,6 @@ VR Basics
 
   * [**User Input In SteamVR**](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
 
----
----  
-
-Work in Progress  
-
----
----
 Geometry
 ------------------------
 ### [Procedural Meshes](https://docs.unity3d.com/2020.1/Documentation/Manual/GeneratingMeshGeometryProcedurally.html)
@@ -98,7 +91,8 @@ Visuals
 * Post Effects
 
 ### Shaders & ShaderGraph
-* [**Getting Started with Shader Graph**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Getting-Started.html)
+* [**Getting Started with ShaderGraph**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Getting-Started.html)
+* [**ShaderGraph Node Library**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Node-Library.html)
 
 Animation
 ------------------------
