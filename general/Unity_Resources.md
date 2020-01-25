@@ -77,15 +77,15 @@ VR Basics
   * [Tutorial: Build Your First VR App](https://developer.oculus.com/documentation/unity/unity-tutorial/)  
   * [Other Resources](https://developer.oculus.com/documentation/unity/unity-resources/)
 
-#### [The OVR namespace](https://developer.oculus.com/reference/unity/1.43/)  
+  * [**The OVR namespace**](https://developer.oculus.com/reference/unity/1.43/)  
 
-#### [User Input in Oculus](https://developer.oculus.com/documentation/unity/unity-input/)
+  * [**User Input in Oculus**](https://developer.oculus.com/documentation/unity/unity-input/)
 
 ### [Steam VR Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
 
-#### [The SteamVR namespace](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
+  * [**The SteamVR namespace**](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
-#### [User Input In SteamVR](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
+  * [**User Input In SteamVR**](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
 
 ---
 ---  
