@@ -124,6 +124,10 @@ Work in Progress
 
 ---
 ---
+Geometry
+------------------------
+### [Procedural Meshes](https://docs.unity3d.com/2020.1/Documentation/Manual/GeneratingMeshGeometryProcedurally.html)
+
 
 Visuals
 ------------------------
@@ -157,11 +161,6 @@ Animation
 * Generating Morph targets in C4D and exporting for Unity
 * Creating Blend Trees from imported .fbx data
 
-Geometry
-------------------------
-* Mesh Basics
-* Mesh manipulation
-* Mesh from scratch
 
 Physics
 ------------------------
