@@ -98,10 +98,7 @@ Visuals
 * Post Effects
 
 ### Shaders & ShaderGraph
-* Input: UV Space, Vertex Position, Camera, User Data
-* Texture Sampling
-* Math recipes: SDFs, Vertex Displacement, Noise, Flipbook animation
-* C# -> ShaderGraph -> C#
+* [**Getting Started with Shader Graph**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Getting-Started.html)
 
 Animation
 ------------------------
