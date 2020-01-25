@@ -6,7 +6,7 @@ Unity Workshop Resources
 ========================
 Links to Other Resources
 ------------------------
-* [**George's Modern Computer Graphics Resources repository**](https://github.com/GeorgeAdamon/ModernComputerGraphicsResources)
+* [**George's "_Modern Computer Graphics Resources_"**](https://github.com/GeorgeAdamon/ModernComputerGraphicsResources)
 
 Unity Basics
 ------------------------
