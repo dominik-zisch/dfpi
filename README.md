@@ -10,7 +10,11 @@ Authors
 George Adamopoulos  
 Domink Zisch
 
-Workshop Content
+General Resources
+---
+* [Unity Resources]()
+
+Workshop Specific Resources
 ---
 ### 2020
 * [**Unity Workshop**]()
