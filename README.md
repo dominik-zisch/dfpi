@@ -6,5 +6,5 @@ _This repository holds the coding resources and teaching material curated by the
 
 Authors
 -----------
-George Adamopoulos
+George Adamopoulos  
 Domink Zisch
