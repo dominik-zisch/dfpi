@@ -58,8 +58,7 @@ How to fix things
 
 VR Basics
 ------------------------
-### Overview
-#### [VR Guidance and Best Practices by Oculus](https://developer.oculus.com/design/book-bp/)
+### [VR Guidance and Best Practices by Oculus](https://developer.oculus.com/design/book-bp/)
 * [Vision](https://developer.oculus.com/design/bp-vision/)
 * [Locomotion](https://developer.oculus.com/design/bp-locomotion/)  
 * [User Input](https://developer.oculus.com/design/bp-userinput/)  
@@ -83,11 +82,6 @@ VR Basics
 #### [The OVR namespace](https://developer.oculus.com/reference/unity/1.43/)  
 
 #### [User Input in Oculus](https://developer.oculus.com/documentation/unity/unity-input/)
-* [OVRInput](https://developer.oculus.com/documentation/unity/unity-ovrinput/)
-* [OVRBoundary](https://developer.oculus.com/documentation/unity/unity-ovrboundary/)
-* [Hand Tracking](https://developer.oculus.com/documentation/unity/unity-handtracking/)
-* [Haptics](https://developer.oculus.com/documentation/unity/unity-haptics/)
-
 
 ### Steam VR
 
