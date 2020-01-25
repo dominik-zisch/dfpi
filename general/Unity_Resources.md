@@ -24,9 +24,9 @@ Unity Basics
   * [The MonoBehaviour Class](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
   * [Execution Order Of Event Functions](https://docs.unity3d.com/Manual/ExecutionOrder.html)
 
-Programming Basics
+C# Programming Basics
 ------------------------
-### Stuff you should already know
+### Stuff you should already know from Processing (Java)
 * Variables
 * Functions
 * Classes
