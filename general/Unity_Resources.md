@@ -102,20 +102,7 @@ VR Basics
 
 #### [The SteamVR namespace](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
-#### [User Input In SteamVR](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)
-* [Overview](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#overview)
-* [Video version](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#video-version)
-* [Downloading the Plugin](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#downloading-the-plugin)
-* [SteamVR Interaction System](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#steamvr-interaction-system)
-* [The SteamVR Input window](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#testing)
-* [Testing](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#testing)
-* [Adding an action](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#adding-an-action)
-* [Binding actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#binding-actions)
-* [Assigning actions in the editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#assigning-actions-in-the-editor)
-* [Working with actions in the code](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#working-with-actions-in-the-code)
-* [Working with actions in the Editor](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#working-with-actions-in-the-editor)
-* [Troubleshooting actions](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#troubleshooting-actions)
-* [Creating a build](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html#creating-a-build)
+#### [User Input In SteamVR](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
 
 ---
 ---  
