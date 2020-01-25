@@ -46,7 +46,7 @@ How to fix things
 
 ### [How to profile your built application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
 
-### [How to Google]()
+### [How to Google](https://www.google.com/)
 
 VR Basics
 ------------------------
@@ -125,7 +125,7 @@ Visuals
 * Global Illumination
 * Post Effects
 
-### ShaderGraph
+### Shaders & ShaderGraph
 * Input: UV Space, Vertex Position, Camera, User Data
 * Texture Sampling
 * Math recipes: SDFs, Vertex Displacement, Noise, Flipbook animation
