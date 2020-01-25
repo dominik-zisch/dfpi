@@ -43,15 +43,15 @@ C# Programming Basics
 
 How to fix things
 ------------------------
-### [How to use the Console & read errors](https://docs.unity3d.com/Manual/Console.html)  
+* [**How to use the Console & read errors**](https://docs.unity3d.com/Manual/Console.html)  
 
-### [How to set up breakpoints](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
+* [**How to set up breakpoints**](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)  
 
-### [How to use the Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html)  
+* [**How to use the Profiler**](https://docs.unity3d.com/Manual/ProfilerWindow.html)  
 
-### [How to use the adb logcat Package to debug the Quest](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)  
+* [**How to use the adb logcat Package to debug the Quest**](https://docs.unity3d.com/Packages/com.unity.mobile.android-logcat@0.1/manual/index.html)  
 
-### [How to profile your built application](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
+* [**How to profile your built application**](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
 
 
 VR Basics
