@@ -1,4 +1,4 @@
-Title: Unity Workshop Structure  
+Title: Unity Resources
 Authors: Adamopoulos George   
 Zisch Dominik  
 
