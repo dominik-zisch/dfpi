@@ -34,11 +34,11 @@ C# Programming Basics
 * Conditionals
 * …
 
-### Stuff you should know but probably don't
+### Stuff you probably don't know yet
 * Lists Vs Arrays in C#
 * Access modifiers (public, private, protected etc)
 * Inheritance (abstract, virtual, sealed, partial etc)
-* Value types vs Reference types & the **new** keyword
+* Value types, Reference types & Immutability
 * …
 
 How to fix things
