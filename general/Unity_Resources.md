@@ -67,9 +67,7 @@ VR Basics
 * [Rendering](https://developer.oculus.com/design/bp-rendering/)
 * [Additional Reading](https://developer.oculus.com/design/bp-reading/)
 
-### Oculus
-
-#### [Oculus Unity Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
+### [Oculus Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
 
   * [Compatibility & Version Requirements](https://developer.oculus.com/documentation/unity/unity-req/)  
   * [Preparing for Android Development](https://developer.oculus.com/documentation/unity/unity-mobileprep/)  
@@ -83,9 +81,7 @@ VR Basics
 
 #### [User Input in Oculus](https://developer.oculus.com/documentation/unity/unity-input/)
 
-### Steam VR
-
-#### [SteamVR Unity Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
+### [Steam VR Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
 
 #### [The SteamVR namespace](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
