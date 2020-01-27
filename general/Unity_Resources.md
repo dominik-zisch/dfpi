@@ -83,9 +83,9 @@ Geometry
 
 Physics
 ------------------------
-* [**Colliders**](https://docs.unity3d.com/2020.1/Documentation/Manual/CollidersOverview.html)
-* [**RigidBodies**](https://docs.unity3d.com/2020.1/Documentation/Manual/class-Rigidbody.html)
-* [**Joints**](https://docs.unity3d.com/2020.1/Documentation/Manual/Joints.html)
+### [Colliders](https://docs.unity3d.com/2020.1/Documentation/Manual/CollidersOverview.html)
+### [RigidBodies](https://docs.unity3d.com/2020.1/Documentation/Manual/class-Rigidbody.html)
+### [Joints](https://docs.unity3d.com/2020.1/Documentation/Manual/Joints.html)
 
 ---
 
