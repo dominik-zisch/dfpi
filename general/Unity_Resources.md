@@ -43,8 +43,9 @@ How to fix things
 
 Project Automation / Management
 ------------------------
+### Which Project Folders You Should Keep When Sharing Your Project With Others
 ### How to make Project Templates
-### How to convert your project into a Package
+### How to convert your project into a Package (for the Package Manager)
 ### How to create Presets
 
 ---
