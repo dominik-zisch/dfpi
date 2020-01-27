@@ -14,31 +14,31 @@ Luckily, that's easy:
 Step 1
 ---
 Select the Material that carries the Shader you want to inspect.
-<missing Image>
+**missing Image
 
 Step 2
 ---
 Click on the gear/cog at the top right of the Material.  
-<missing Image>
+**missing Image
 
 Step 3
 ---
-On the dropdown menu that shows up, click on `Select Shader`. This will select the shader, wherever it is located inside your Assets folder. <missing Image>
+On the dropdown menu that shows up, click on `Select Shader`. This will select the shader, wherever it is located inside your Assets folder. **missing Image
 
 Step 4
 ---
 What just appeared on the Inspector window, is a list of all the information about our Shader. If we scroll down a little bit, we can see a section named `Properties`. On the **left side** of this section, we can see the names of all our properties of our shader. Copying and pasting these strings in our C# code, ensures that we refer to the property we want to change using the right name.
-<missing Image>
+**missing Image
 
 Examples
 ---
 ### Setting base color
-<missing Image>. 
+**missing Image  
 `GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1,0,0));`
 
 
 ### Setting emission
-<missing Image>. 
+**missing Image  
 `GetComponent<MeshRenderer>().material.SetColor("_BaseColor", new Color(1,0,0));`
 
 
