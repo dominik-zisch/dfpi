@@ -100,7 +100,7 @@ Visuals
 * [**Getting Started with ShaderGraph**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Getting-Started.html)
 * [**ShaderGraph Node Library**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Node-Library.html)
 
-* [**How To Find the Property Names of any Shader**]()
+* [**How To Find the Property Names of any Shader**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Unity_Resources_Articles/FindShaderProperties.md#how-to-find-the-property-names-of-any-shader)
 
 ---
 
