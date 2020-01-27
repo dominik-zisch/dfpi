@@ -12,6 +12,7 @@ Domink Zisch
 
 General Resources
 ---
+* [**C# Specific Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/C%23%20Resources.md#c-programming-basics)
 * [**Unity Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Unity_Resources.md)
 * [**Oculus Quest Specific Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Oculus_Quest_Resources.md)
 
