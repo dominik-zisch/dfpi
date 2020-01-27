@@ -43,10 +43,10 @@ How to fix things
 
 Project Automation / Management
 ------------------------
-### How To Share Your Project With Others
+### How to share your Project with others
 ### How to make Project Templates
-### How to convert your project into a Package (for the Package Manager)
-### How to create Presets for Objects You Use Frequently
+### How to convert your Project into a Package (for the Package Manager)
+### How to create Presets for frequently used Objects
 
 ---
 
