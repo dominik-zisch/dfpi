@@ -12,6 +12,7 @@ Links to Other Resources
 * [**Inigo Quilez's list of Useful Little Functions**](https://www.iquilezles.org/www/articles/functions/functions.htm)
 * [**The Famous Catlike Coding Tutorials**](https://catlikecoding.com/unity/tutorials/)
 
+---
 
 Unity Basics
 ------------------------
@@ -23,6 +24,8 @@ Unity Basics
   * [Controlling GameObjects Using Components](https://docs.unity3d.com/Manual/ControllingGameObjectsComponents.html)
   * [The MonoBehaviour Class](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
   * [Execution Order Of Event Functions](https://docs.unity3d.com/Manual/ExecutionOrder.html)
+
+---
 
 How to fix things
 ------------------------
@@ -36,6 +39,15 @@ How to fix things
 
 * [**How to profile your built application**](https://docs.unity3d.com/Manual/profiler-profiling-applications.html)  
 
+---
+
+Project Automation / Management
+------------------------
+### How to make Project Templates
+### How to convert your project into a Package
+### How to create Presets
+
+---
 
 VR Basics
 ------------------------
@@ -60,16 +72,21 @@ VR Basics
 
   * [**User Input In SteamVR**](https://valvesoftware.github.io/steamvr_unity_plugin/tutorials/SteamVR-Input.html)  
 
+---
+
 Geometry
 ------------------------
 ### [Procedural Meshes](https://docs.unity3d.com/2020.1/Documentation/Manual/GeneratingMeshGeometryProcedurally.html)
 
+---
 
 Physics
 ------------------------
 * [**Colliders**](https://docs.unity3d.com/2020.1/Documentation/Manual/CollidersOverview.html)
 * [**RigidBodies**](https://docs.unity3d.com/2020.1/Documentation/Manual/class-Rigidbody.html)
 * [**Joints**](https://docs.unity3d.com/2020.1/Documentation/Manual/Joints.html)
+
+---
 
 Visuals
 ------------------------
@@ -82,6 +99,8 @@ Visuals
 ### Shaders & ShaderGraph
 * [**Getting Started with ShaderGraph**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Getting-Started.html)
 * [**ShaderGraph Node Library**](https://docs.unity3d.com/Packages/com.unity.shadergraph@6.9/manual/Node-Library.html)
+
+---
 
 Animation
 ------------------------
