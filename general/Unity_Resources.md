@@ -24,23 +24,6 @@ Unity Basics
   * [The MonoBehaviour Class](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html)
   * [Execution Order Of Event Functions](https://docs.unity3d.com/Manual/ExecutionOrder.html)
 
-C# Programming Basics
-------------------------
-### Stuff you should already know from Processing (Java)
-* Variables
-* Functions
-* Classes
-* Loops
-* Conditionals
-* …
-
-### Stuff you probably don't know yet
-* Lists Vs Arrays in C#
-* Access modifiers (public, private, protected etc)
-* Inheritance (abstract, virtual, sealed, partial etc)
-* Value types, Reference types & Immutability
-* …
-
 How to fix things
 ------------------------
 * [**How to use the Console & read errors**](https://docs.unity3d.com/Manual/Console.html)  
