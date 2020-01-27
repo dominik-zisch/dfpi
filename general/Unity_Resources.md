@@ -2,7 +2,7 @@ Title: Unity Resources
 Authors: Adamopoulos George   
 Zisch Dominik  
 
-Unity Workshop Resources
+Unity Resources
 ========================
 Links to Other Resources
 ------------------------
@@ -65,13 +65,13 @@ VR Basics
 * [Rendering](https://developer.oculus.com/design/bp-rendering/)
 * [Additional Reading](https://developer.oculus.com/design/bp-reading/)
 
-### [Oculus Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
+### [Oculus - Unity Getting Started Guide](https://developer.oculus.com/documentation/unity/book-unity-gsg/)  
 
   * [**The OVR namespace**](https://developer.oculus.com/reference/unity/1.43/)  
 
   * [**User Input in Oculus**](https://developer.oculus.com/documentation/unity/unity-input/)
 
-### [Steam VR Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
+### [Steam VR - Unity Getting Started Guide](https://valvesoftware.github.io/steamvr_unity_plugin/articles/intro.html)  
 
   * [**The SteamVR namespace**](https://valvesoftware.github.io/steamvr_unity_plugin/api/index.html)
 
