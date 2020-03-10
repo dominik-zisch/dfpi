@@ -22,6 +22,3 @@ Workshop Specific Resources
 * [**Unity Workshop**](https://github.com/GeorgeAdamon/dfpi/tree/master/workshops/unity)
 
 ---
-
-### 2019
-* [**Oculus Quest Workshop**]()
