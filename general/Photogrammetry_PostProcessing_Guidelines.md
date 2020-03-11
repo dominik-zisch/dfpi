@@ -25,7 +25,7 @@ Step 1: High - To - Low
 * **Recommended:** [**Instant Meshes**](https://github.com/wjakob/instant-meshes) (free)  
   + [Windows](https://instant-meshes.s3.eu-central-1.amazonaws.com/Release/instant-meshes-windows.zip)
   + [Mac](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-macos.zip)
-  + [Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)
+  + [Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)  
 or  
 * **Any major 3D package (Maya, 3ds Max, Cinema4D, Modo etc)**  
 or  
