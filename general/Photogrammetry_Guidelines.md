@@ -62,6 +62,7 @@ For now what's enough is for the UVs to be auto-split and auto-packed by our sof
 ### Automatic UV-Unwrapping in Cinema4D
 
 #### Switch Layout to UV Edit
+![Switch Layout](https://github.com/GeorgeAdamon/dfpi/tree/master/general/Photogrammetry_Resources_Screenshots/UV 1.png)  
 
 #### Prepare for Auto-Layout
 
