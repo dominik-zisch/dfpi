@@ -1,13 +1,19 @@
 Photogrammetry Guidelines
 ===
+_by Georgios Adamopoulos  
 
 About
 ---
 Good quality photogrammetry or LIDAR scanning typically results in multi-GB meshes.  
+
 Only a lunatic would dare to put such a large mesh in a game, let alone an Oculus Quest game.  
+
 Thankfully there are workflows that allow us to _dramatically_ reduce the poly-count of a mesh, without a **perceptible** loss in visual quality.  
+
 These workflows can be implemented in various software, and you can find variations of them in online tutorials.  
-We will attempt to present them in a general way, providin as many alternatives as possible.
+
+We will attempt to present them in a general way, providing as many alternatives as possible.  
+
 
 [Step 0: Read the Guide](https://unity3d.com/files/solutions/photogrammetry/Unity-Photogrammetry-Workflow_2017-07_v2.pdf)
 ---
@@ -79,6 +85,48 @@ For now what's enough is for the UVs to be auto-split and auto-packed by our sof
 
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 4.png" />
 
+
 Step 3: Texture Transfer
 ---
+### Software Needed
+* [**Substance Designer**](https://www.substance3d.com/education/) (Free educational version)  
 
+### Description
+Once our low-poly mesh is uv-unwrapped, and we have made sure that **it perfectly aligns** with the original (you can test by copy-pasting the original inside the file containing the low-poly), we are ready to perform the last, magical step:  
+
+Transfering high quality information from the high-poly to the low-poly model in the form of textures!  
+
+### Process
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance1.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance2.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance3.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4.png" />
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4-5.png" />
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance5.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance6.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance7.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance8.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance9.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance10.png" />
+
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance11.png" />
