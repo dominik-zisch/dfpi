@@ -22,12 +22,15 @@ Pay special attention to chapter 5.
 Step 1: High - To - Low
 ---
 ### Software needed
-* [**Instant Meshes**](https://github.com/wjakob/instant-meshes)  
+* **Recommended:** [**Instant Meshes**](https://github.com/wjakob/instant-meshes) (free)  
   + [Windows](https://instant-meshes.s3.eu-central-1.amazonaws.com/Release/instant-meshes-windows.zip)
   + [Mac](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-macos.zip)
   + [Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)
 or  
-* **Any major 3D package (Maya, 3ds Max, Cinema4D, Blender, Modo etc)**  
+* **Any major 3D package (Maya, 3ds Max, Cinema4D, Modo etc)**  
+or  
+* [**Blender**](https://www.blender.org/) (free)  
+
 
 ### Description
 First step in our process is to reduce the polygon count of our mesh.  
@@ -58,9 +61,12 @@ Clicking the left mouse button and dragging rotates the object; right-dragging (
 Step 2: UV Unwrapping
 ---
 ### Software Needed
-* **Any major 3D package (Maya, 3ds Max, Cinema4D, Blender, Modo etc)**  
+* **Any major commercial 3D package (Maya, 3ds Max, Cinema4D, Modo etc)**  
 or
-* [**Rizom UV**](https://www.rizom-lab.com/rizomuv-vs/) (70% student discount)  
+* **Recommended:** [**Rizom UV**](https://www.rizom-lab.com/rizomuv-vs/) (70% student discount)  
+or  
+* [**Blender**](https://www.blender.org/) (free)  
+
 
 ### Description
 Once our low-poly mesh is exported, we need to make sure its UV coordinates are not overlapping.  
@@ -91,11 +97,12 @@ For now what's enough is for the UVs to be auto-split and auto-packed by our sof
 Step 3: Texture Transfer
 ---
 ### Software Needed
-* [**Substance Designer**](https://www.substance3d.com/education/) (Free educational version)  
+* **Recommended:** [**Substance Designer**](https://www.substance3d.com/education/) (Free educational version)  
 or  
 * **Maya**  
 or  
-* **Blender**
+* [**Blender**](https://www.blender.org/) (free)  
+
 
 ### Description
 Once our low-poly mesh is uv-unwrapped, and we have made sure that **it perfectly aligns** with the original (you can test by copy-pasting the original inside the file containing the low-poly), we are ready to perform the last, magical step:  
