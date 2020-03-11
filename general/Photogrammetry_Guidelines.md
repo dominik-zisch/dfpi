@@ -45,6 +45,8 @@ A range of additional information about the input mesh, the computed fields, and
 
 Clicking the left mouse button and dragging rotates the object; right-dragging (or shift+left-dragging) translates, and the mouse wheel zooms. The fields can also be manipulated using brush tools that are accessible by clicking the first icon in each 'Tool' row.
 
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/InstantMeshes.png" />
+
 Step 2: UV Unwrapping
 ---
 ### Software Needed
@@ -59,7 +61,7 @@ We do not necessarily need to create a perfect UV unwrapping, minimizing distort
 
 For now what's enough is for the UVs to be auto-split and auto-packed by our software.
 
-### Automatic UV-Unwrapping in Cinema4D
+### Automatic UV-Unwrapping in Cinema4D (Process is similar for other packages)
 
 #### Switch Layout to UV Edit  
 
@@ -77,6 +79,6 @@ For now what's enough is for the UVs to be auto-split and auto-packed by our sof
 
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 4.png" />
 
-#### Re-Align 
+Step 3: Texture Transfer
+---
 
-<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 5.png" />
