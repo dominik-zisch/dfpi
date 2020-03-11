@@ -63,12 +63,20 @@ For now what's enough is for the UVs to be auto-split and auto-packed by our sof
 
 #### Switch Layout to UV Edit  
 
-<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV_1.jpg" />
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 1.png" />
 
 #### Prepare for Auto-Layout
 
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 2.png" />
+
 #### Cubic Auto-Layout
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 3.png" />
 
 #### Angle Auto-Layout
 
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 4.png" />
+
 #### Re-Align 
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/UV 5.png" />
