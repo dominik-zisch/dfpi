@@ -1,6 +1,6 @@
 Photogrammetry Guidelines
 ===
-_by Georgios Adamopoulos  
+_by Georgios Adamopoulos_  
 
 About
 ---
