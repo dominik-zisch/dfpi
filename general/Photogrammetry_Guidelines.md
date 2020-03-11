@@ -104,34 +104,33 @@ Transfering high quality information from the high-poly to the low-poly model in
 #### Linking High-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance2.png" />
 
-#### Linking Low-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance3.png" />
 
 #### Linking Low-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4.png" />
 
-
+#### Linking Original Color Texture
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4-5.png" />
 
-
+#### Linking Complete
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance5.png" />
 
-
+#### Start Baking
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance6.png" />
 
-
+#### Select High-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance7.png" />
 
-
+#### Set Baking Settings
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance8.png" />
 
-
+#### Select Original Texture
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance9.png" />
 
-
+#### Baking
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance10.png" />
 
-
+#### Finish
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance11.png" />
 
 ### Results
