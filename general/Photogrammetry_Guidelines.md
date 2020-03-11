@@ -17,14 +17,19 @@ Step 1: High - To - Low
 ---
 ### Software needed
 * [**Instant Meshes**](https://github.com/wjakob/instant-meshes)  
-+[Windows](https://instant-meshes.s3.eu-central-1.amazonaws.com/Release/instant-meshes-windows.zip)
-+[Mac](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-macos.zip)
-+[Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)
+  + [Windows](https://instant-meshes.s3.eu-central-1.amazonaws.com/Release/instant-meshes-windows.zip)
+  + [Mac](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-macos.zip)
+  + [Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)
 
 ### Description
-First step in our process is to reduce the polygon count of our mesh. Lots of software can do that, but we find Instant Meshes to be one of the fastest, most robust, and easiest to use software. On top of that it's free & open source! Yay! Instant Meshes tries to align the generated polygons to the curvature field of your original mesh, attempting to preserve features and sharp creases. As a rule of thumb, try to reduce the triangle count to 1/10 of the original, and adjust accordingly, until you are satisfied with the quality. Keep in mind, the polygon count of the mesh **can** and **should** be as low as possible.  
+First step in our process is to reduce the polygon count of our mesh.  
+Lots of software can do that, but we find Instant Meshes to be one of the fastest, most robust, and easiest to use.   
+On top of that it's free & open source! Yay!  
+Instant Meshes tries to align the generated polygons to the curvature field of your original mesh, attempting to preserve features and sharp creases.  
+As a rule of thumb, try to reduce the triangle count to **1/10** of the original, and adjust accordingly, until you are satisfied with the quality. Keep in mind, the polygon count of the mesh **can** and **should** be as low as possible.  
 
 Don't worry if your model looks like it lost all of its beauty. We will get that back in a while!  
+
 _Patience you must have, young padawan!_
 
 ### Usage of Instant Meshes
