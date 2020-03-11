@@ -23,9 +23,12 @@ Step 1: High - To - Low
 
 ### Description
 First step in our process is to reduce the polygon count of our mesh.  
+
 Lots of software can do that, but we find Instant Meshes to be one of the fastest, most robust, and easiest to use.   
 On top of that it's free & open source! Yay!  
+
 Instant Meshes tries to align the generated polygons to the curvature field of your original mesh, attempting to preserve features and sharp creases.  
+
 As a rule of thumb, try to reduce the triangle count to **1/10** of the original, and adjust accordingly, until you are satisfied with the quality. Keep in mind, the polygon count of the mesh **can** and **should** be as low as possible.  
 
 Don't worry if your model looks like it lost all of its beauty. We will get that back in a while!  
@@ -33,7 +36,7 @@ Don't worry if your model looks like it lost all of its beauty. We will get that
 _Patience you must have, young padawan!_
 
 ### Usage of Instant Meshes
-[Video](https://www.youtube.com/watch?v=U6wtw6W4x3I)
+[Video](https://www.youtube.com/watch?v=U6wtw6W4x3I)  
 To get started, launch the binary and select a dataset using the "Open mesh" button on the top left (the application must be located in the same directory as the 'datasets' folder, otherwise the panel will be empty).
 
 The standard workflow is to solve for an orientation field (first blue button) and a position field (second blue button) in sequence, after which the 'Export mesh' button becomes active. Many user interface elements display a descriptive message when hovering the mouse cursor above for a second.
