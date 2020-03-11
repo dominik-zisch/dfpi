@@ -26,6 +26,8 @@ Step 1: High - To - Low
   + [Windows](https://instant-meshes.s3.eu-central-1.amazonaws.com/Release/instant-meshes-windows.zip)
   + [Mac](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-macos.zip)
   + [Linux](https://instant-meshes.s3.eu-central-1.amazonaws.com/instant-meshes-linux.zip)
+or  
+* **Any major 3D package (Maya, 3ds Max, Cinema4D, Blender, Modo etc)**  
 
 ### Description
 First step in our process is to reduce the polygon count of our mesh.  
@@ -90,6 +92,10 @@ Step 3: Texture Transfer
 ---
 ### Software Needed
 * [**Substance Designer**](https://www.substance3d.com/education/) (Free educational version)  
+or  
+* **Maya**  
+or  
+* **Blender**
 
 ### Description
 Once our low-poly mesh is uv-unwrapped, and we have made sure that **it perfectly aligns** with the original (you can test by copy-pasting the original inside the file containing the low-poly), we are ready to perform the last, magical step:  
