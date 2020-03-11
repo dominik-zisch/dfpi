@@ -1,4 +1,4 @@
-Photogrammetry Guidelines
+Photogrammetry Post-Processing Guidelines
 ===
 _by Georgios Adamopoulos_  
 
