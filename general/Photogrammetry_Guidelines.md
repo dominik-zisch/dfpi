@@ -45,3 +45,28 @@ A range of additional information about the input mesh, the computed fields, and
 
 Clicking the left mouse button and dragging rotates the object; right-dragging (or shift+left-dragging) translates, and the mouse wheel zooms. The fields can also be manipulated using brush tools that are accessible by clicking the first icon in each 'Tool' row.
 
+Step 2: UV Unwrapping
+---
+### Software Needed
+* **Any major 3D package (Maya, 3ds Max, Cinema4D, Blender, Modo etc)**  
+or
+* [**Rizom UV**](https://www.rizom-lab.com/rizomuv-vs/) (70% student discount)  
+
+### Description
+Once our low-poly mesh is exported, we need to make sure its UV coordinates are not overlapping.  
+
+We do not necessarily need to create a perfect UV unwrapping, minimizing distortion, hiding seams, packing as tightly as possible etc, although learning how to do the above will certainly help in your career.  
+
+For now what's enough is for the UVs to be auto-split and auto-packed by our software.
+
+### Automatic UV-Unwrapping in Cinema4D
+
+#### Switch Layout to UV Edit
+
+#### Prepare for Auto-Layout
+
+#### Cubic Auto-Layout
+
+#### Angle Auto-Layout
+
+#### Re-Align 
