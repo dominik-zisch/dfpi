@@ -98,18 +98,21 @@ Transfering high quality information from the high-poly to the low-poly model in
 
 ### Process
 
+#### New Package
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance1.png" />
 
-
+#### Linking High-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance2.png" />
 
-
+#### Linking Low-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance3.png" />
 
-
+#### Linking Low-Res Mesh
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4.png" />
 
+
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance4-5.png" />
+
 
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance5.png" />
 
@@ -130,3 +133,21 @@ Transfering high quality information from the high-poly to the low-poly model in
 
 
 <img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance11.png" />
+
+### Results
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance12.png" />
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance13.png" />
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance14.png" />
+
+<img src="https://raw.githubusercontent.com/GeorgeAdamon/dfpi/master/general/Photogrammetry_Resources_Screenshots/Substance15.png" />
+
+Step 4: Finally
+---
+Now you can bring your **low-poly** model in Unity, along with the textures you just generated, make a new Material and attach the color texture to **Albedo**, and the normal texture to **Normal Map**, the Ambient Occlusion texture in the **Occlusion Map** or optionally use the other textures (thickness, curvature etc) to create some interesting maps in Photoshop, and use them instead of the color texture.
+
+Word of Advice! 
+---
+Substance Designer is an extremely powerful app. [**Spend time to learn it**](https://academy.substance3d.com/search?software=substance%20designer)
