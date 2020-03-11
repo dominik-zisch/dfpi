@@ -10,14 +10,17 @@ Authors
 George Adamopoulos  
 Domink Zisch
 
-General Resources
+General Knowledge Bases
 ---
-* [**C# Specific Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/C%23%20Resources.md#c-programming-basics)
-* [**Unity Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Unity_Resources.md)
-* [**Oculus Quest Specific Resources**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Oculus_Quest_Resources.md)
+* [**C#**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/C%23%20Resources.md#c-programming-basics)
+* [**Unity**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Unity_Resources.md)
+* [**Oculus Quest**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Oculus_Quest_Resources.md)
+
+Specialized Knowledge Bases
+---
 * [**Photogrammetry Post-Processing Guidelines**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Photogrammetry_PostProcessing_Guidelines.md)
 
-Workshop Specific Resources
+Workshop Resources
 ---
 ### 2020
 * [**Unity Workshop**](https://github.com/GeorgeAdamon/dfpi/tree/master/workshops/unity)
