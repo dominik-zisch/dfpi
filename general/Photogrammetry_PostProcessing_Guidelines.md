@@ -62,9 +62,9 @@ Clicking the left mouse button and dragging rotates the object; right-dragging (
 Step 2: UV Unwrapping
 ---
 ### Software Needed
-* **Any major commercial 3D package (Maya, 3ds Max, Cinema4D, Modo etc)**  
-or
 * **Recommended:** [**Rizom UV**](https://www.rizom-lab.com/rizomuv-vs/) (70% student discount)  
+or  
+* **Any major commercial 3D package (Maya, 3ds Max, Cinema4D, Modo etc)**  
 or  
 * [**Blender**](https://www.blender.org/) (free)  
 
