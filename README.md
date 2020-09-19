@@ -18,7 +18,8 @@ Workshop Resources
 
 Code Snippets
 ---
-* [**Easy Topological Graphs in C#**]
+* [**Easy Topological Graphs in C#**](https://github.com/GeorgeAdamon/dfpi/blob/master/snippets/QuickGraphUtility.cs)
+
 Example Projects
 ---
 * [**Unity-Arduino Communication**](https://github.com/dominik-zisch/UnityArduinoComms)
