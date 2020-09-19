@@ -16,6 +16,9 @@ Workshop Resources
 ### 2020
 * [**Unity Workshop**](https://github.com/GeorgeAdamon/dfpi/tree/master/workshops/unity)
 
-Code Recipes
+Code Snippets
+---
+
+Example Projects
 ---
 
