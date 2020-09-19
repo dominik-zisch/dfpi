@@ -7,7 +7,7 @@ _This repository holds the coding resources and teaching material curated by the
 
 #### Authors
 [George Adamopoulos](https://github.com/GeorgeAdamon)  
-[Domink Zisch]
+[Domink Zisch](https://github.com/dominik-zisch)
 
 ## [Wiki](https://github.com/GeorgeAdamon/dfpi/wiki)
 
