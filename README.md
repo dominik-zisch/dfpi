@@ -10,17 +10,7 @@ Authors
 George Adamopoulos  
 Domink Zisch
 
-General Knowledge Bases
----
-* [**C#**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/C%23%20Resources.md#c-programming-basics)
-* [**Unity**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Unity_Resources.md)
-* [**Oculus Quest**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Oculus_Quest_Resources.md)
-
-Specialized Knowledge Bases
----
-* [**Photogrammetry Post-Processing Guidelines**](https://github.com/GeorgeAdamon/dfpi/blob/master/general/Photogrammetry_PostProcessing_Guidelines.md)
-
-* [**Cinema4D-To-Unity Workflow**]()
+## [Wiki](https://github.com/GeorgeAdamon/dfpi/wiki)
 
 Workshop Resources
 ---
