@@ -1,3 +1,8 @@
+//==============================================================
+// Requires installation of the QuickGraph library
+// https://www.nuget.org/packages/YC.QuickGraph
+//==============================================================
+
 using QuickGraph;
 
 public static class QuickGraphUtility()
