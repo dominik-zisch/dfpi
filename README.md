@@ -9,7 +9,7 @@ _This repository holds the coding resources and teaching material curated by the
 [George Adamopoulos](https://github.com/GeorgeAdamon)  
 [Domink Zisch](https://github.com/dominik-zisch)
 
-## [Wiki](https://github.com/GeorgeAdamon/dfpi/wiki)
+## [>>> Wiki <<<](https://github.com/GeorgeAdamon/dfpi/wiki)
 
 Workshop Resources
 ---
