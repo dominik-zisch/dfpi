@@ -23,4 +23,5 @@ Code Snippets
 Example Unity Projects
 ---
 * [**Unity-Arduino Communication**](https://github.com/dominik-zisch/UnityArduinoComms)
-* [**Visual Effects Graph Example**]()
+* [**Visual Effects Graph Examples**](https://github.com/GeorgeAdamon/dfpi/tree/master/examples/unity/vfx)
+* [**Animation Beginners Examples**](https://github.com/GeorgeAdamon/dfpi/tree/master/examples/unity/animation)
