@@ -3,9 +3,9 @@ Design for Performance and Interaction (DfPI) Code Resources
 
 Description
 ---
-_This repository holds the coding resources and teaching material curated by the technical tutors of the course MArch Design of Performance and Interaction @ the Bartlett School of Architecture, UCL. This content is temporarily hosted at [GeorgeAdamon](https://github.com/GeorgeAdamon) account, but will be moved to dfpi's github Organization._
+_This repository holds the coding resources and teaching material curated by the technical tutors of the course MArch Design of Performance and Interaction @ the Bartlett School of Architecture, UCL. This content was temporarily hosted at [GeorgeAdamon](https://github.com/GeorgeAdamon) account prior to being moved to the UCL organization._
 
-#### Authors
+#### List of Contributors
 [George Adamopoulos](https://github.com/GeorgeAdamon)  
 [Domink Zisch](https://github.com/dominik-zisch)
 
