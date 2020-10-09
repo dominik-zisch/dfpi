@@ -1,0 +1,23 @@
+{
+    "scenes":
+    [
+        {
+            "name": "First Scene",
+            "index": 0,
+            "neighbors":
+            [1,2]
+        },
+        {
+            "name": "Second Scene",
+            "index": 1,
+            "neighbors":
+            [0,2]
+        },
+        {
+            "name": "Third Scene",
+            "index": 2,
+            "neighbors":
+            [0,1]
+        }
+    ]
+}
