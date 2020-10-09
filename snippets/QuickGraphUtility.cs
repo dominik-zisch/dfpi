@@ -3,9 +3,12 @@
 // https://www.nuget.org/packages/YC.QuickGraph
 //==============================================================
 
+using System;
+using System.Collections.Generic;
 using QuickGraph;
+using QuickGraph.Algorithms;
 
-public static class QuickGraphUtility()
+public static class QuickGraphUtility
 {
 
     public static AdjacencyGraph<int, SEdge<int>> BuildGraph()
@@ -44,8 +47,7 @@ public static class QuickGraphUtility()
         return neighbors;
     }
 
-    public static List<int> ShortestPath_SingleSourceSingleTarget(
-    AdjacencyGraph<int, SEdge<int>> graph, int source, int target)
+    public static List<int> ShortestPath_SingleSourceSingleTarget(AdjacencyGraph<int, SEdge<int>> graph, int source, int target)
     {
         List<int> vertexPath = new List<int>();
         vertexPath.Add(source);
@@ -54,17 +56,18 @@ public static class QuickGraphUtility()
 
         var tryGetPaths = graph.ShortestPathsDijkstra(edgeCost, source);
 
-        if (tryGetPaths(target, out edgePath))
+        if (tryGetPaths(target, out var edgePath))
         {
             foreach (SEdge<int> edge in edgePath)
             {
                 vertexPath.Add(edge.Target);
             }
         }
+
+        return vertexPath;
     }
 
-    public static List<int> ShortestPath_SingleSourceSingleTarget(
-    AdjacencyGraph<int, SEdge<int>> graph, int source, int target. Dictionary<string, double> costs)
+    public static List<int> ShortestPath_SingleSourceSingleTarget(AdjacencyGraph<int, SEdge<int>> graph, int source, int target, Dictionary<string, double> costs)
     {
         List<int> vertexPath = new List<int>();
         vertexPath.Add(source);
@@ -80,13 +83,15 @@ public static class QuickGraphUtility()
 
         var tryGetPaths = graph.ShortestPathsDijkstra(edgeCost, source);
 
-        if (tryGetPaths(target, out edgePath))
+        if (tryGetPaths(target, out var edgePath))
         {
             foreach (SEdge<int> edge in edgePath)
             {
                 vertexPath.Add(edge.Target);
             }
         }
+
+        return vertexPath;
     }
 
 }
