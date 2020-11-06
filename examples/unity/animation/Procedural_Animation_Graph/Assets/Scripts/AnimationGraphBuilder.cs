@@ -16,7 +16,12 @@ public class AnimationGraphBuilder : MonoBehaviour
     private List<AnimatorStateTransition> StateTransitions;
     
     public  string               SceneParentName = "Scenes";
-   
+
+    public AnimationCurve inCurve;
+    public AnimationCurve outCurve;
+
+    public List<GameObject> prefabs;
+    
     private AnimatorStateMachine Root;
     private GameObject           Parent;
     private List<GameObject>     Scenes;
@@ -38,12 +43,13 @@ public class AnimationGraphBuilder : MonoBehaviour
             return;
         
         DestroyImmediate(toDestroy);
+       
         toDestroy = null;
     }
 
+    
     public void RebuildAnimationGraph(Graph graph)
     {
-        
         InitializeSelf();
 
         InitializeController();
@@ -56,6 +62,11 @@ public class AnimationGraphBuilder : MonoBehaviour
 
         Finalize();
     }
+   
+    
+    
+    
+    
     
     private void InitializeSelf()
     { 
@@ -109,11 +120,34 @@ public class AnimationGraphBuilder : MonoBehaviour
     
     private void GenerateSceneGameObjects(Graph graph)
     {
+        int i = 0;
+
         foreach (var node in graph.nodes)
         {
-            var go = new GameObject(node.Index.ToString(), animatedScriptType);
+            GameObject go = null;
+
+            if (prefabs == null || prefabs.Count-1 < i)
+            {
+                go = new GameObject(node.Index.ToString(), animatedScriptType, typeof(MeshRenderer),
+                                    typeof(MeshFilter));
+            }
+            else
+            {
+                // Generate a scene using a prefab
+                go      = GameObject.Instantiate(prefabs[i]);
+                go.name = node.Index.ToString();
+                
+                // check if the scene has the animatedScriptType component already
+                if (go.TryGetComponent(animatedScriptType, out _) == false)
+                {
+                    go.AddComponent(animatedScriptType);
+                }
+            }
+         
             go.transform.SetParent(Parent.transform);
             Scenes.Add(go);
+
+            i++;
         }
     }
 
@@ -144,31 +178,23 @@ public class AnimationGraphBuilder : MonoBehaviour
     }
     
     
-    private static Vector3 CircularNodePosition(Graph graph, Node node, float radius = 400)
-    {
-        var t   = (node.Index / (float) graph.nodes.Count);
-       
-        var p   = Mathf.Lerp(0, Mathf.PI * 2, t);
-       
-        return new Vector3(Mathf.Sin(p), Mathf.Cos(p), 0) * radius;
-        
-    }
+    
     
     private AnimatorStateMachine AddNode(Node node, Vector3 position = default)
     {
         // Create a new sub-state machine to hold this node's states
-        var sm = Root.AddStateMachine( $"Node {node.Index}", position);
+        var subState = Root.AddStateMachine( $"Node {node.Index}", position);
          
         // Place default states at the top
-        sm.anyStatePosition = new Vector3(240, -240, 0);
-        sm.entryPosition    = new Vector3(20,  -120, 0);
+        subState.anyStatePosition = new Vector3(240, -240, 0);
+        subState.entryPosition    = new Vector3(20,  -120, 0);
         
         // Add entry state
-        var inState = sm.AddState("In", new Vector3(0, 0, 0));
-        inState.motion = AddIncomingClip(5, node);
+        var inState = subState.AddState("In", new Vector3(0, 0, 0));
+        inState.motion = AddIncomingClip(5, node, inCurve);
        
-        // Add entry state
-        var idleState = sm.AddState("Idle", new Vector3(0, 120, 0));
+        // Add idle state
+        var idleState = subState.AddState("Idle", new Vector3(0, 120, 0));
         idleState.motion = AddIdleClip(5, node);
         
         // Connect "in" to "idle"
@@ -179,10 +205,10 @@ public class AnimationGraphBuilder : MonoBehaviour
         inToIdleTransition.hasExitTime = true;
         
         // Place default states at the bottom
-        sm.parentStateMachinePosition = new Vector3(0,  360, 0);
-        sm.exitPosition               = new Vector3(20, 480, 0);
+        subState.parentStateMachinePosition = new Vector3(0,  360, 0);
+        subState.exitPosition               = new Vector3(20, 480, 0);
         
-        return sm;
+        return subState;
     }
 
     private AnimatorStateTransition AddEdge(Edge edge)
@@ -202,7 +228,7 @@ public class AnimationGraphBuilder : MonoBehaviour
         // Generate a new Out State
         var xPosition = (currentState.states.Length -2) * 300;
         var outState  = currentState.AddState($"To Node {to}", new Vector3(xPosition, 240, 0));
-        outState.motion = AddOutgoingClip(5, edge.From);
+        outState.motion = AddOutgoingClip(5, edge.From, outCurve);
         
         // Generate a new transition from the idle state to the out state
         var idleToOutTransition = currentState.states[1].state.AddTransition(outState);
@@ -219,41 +245,61 @@ public class AnimationGraphBuilder : MonoBehaviour
         return outToNext;
     }
     
-    private AnimationClip AddClip(float duration, float valueAtStart, float valueAtEnd, Type type, string propertyName, string objectPath, string clipName)
+    
+
+    private AnimationClip AddOutgoingClip(float duration, Node node, AnimationCurve crv = null)
+    {
+        return AddClip(duration, 1, 0, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Exiting Node {node.Index}", crv);
+    }
+    
+    private AnimationClip AddIdleClip(float duration, Node node, AnimationCurve crv = null)
+    {
+        return AddClip(duration, 1, 1, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Staying at Node {node.Index}", crv);
+    }
+    
+    private AnimationClip AddIncomingClip(float duration, Node node, AnimationCurve crv= null)
+    {
+        return AddClip(duration, 0, 1, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Entering Node {node.Index}", crv);
+    }
+    
+    
+    private AnimationClip AddClip(float duration, float valueAtStart, float valueAtEnd, Type type, string propertyName, string objectPath, string clipName, AnimationCurve crv = null)
     {
         // New empty clip
         var clip = new AnimationClip();
         
         // New animation curve
-        var crv = AnimationCurve.EaseInOut(0, valueAtStart, duration, valueAtEnd);
+        if (crv == null) 
+            crv = AnimationCurve.EaseInOut(0, valueAtStart, duration, valueAtEnd);
        
+        // ===============================================
+        // IMPORTANT PART ! ==============================
         // Apply curve to clip
         clip.SetCurve(objectPath, type, propertyName, crv);
-        
+        // ===============================================
+
         // (optional) set clip's name
         clip.name = clipName;
         
         // Save clip inside AnimatorController
         AssetDatabase.AddObjectToAsset(clip, controller);
-        clip.hideFlags = HideFlags.HideInHierarchy;
+       // clip.hideFlags = HideFlags.HideInHierarchy;
         AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(clip));
       
         return clip;
     }
 
-    private AnimationClip AddOutgoingClip(float duration, Node node)
-    {
-        return AddClip(duration, 1, 0, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Exiting Node {node.Index}");
-    }
     
-    private AnimationClip AddIdleClip(float duration, Node node)
-    {
-        return AddClip(duration, 1, 1, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Staying at Node {node.Index}");
-    }
     
-    private AnimationClip AddIncomingClip(float duration, Node node)
+    private static Vector3 CircularNodePosition(Graph graph, Node node, float radius = 400)
     {
-        return AddClip(duration, 0, 1, animatedScriptType, propertyName, $"{SceneParentName}/{node.Index}", $"Entering Node {node.Index}");
+        var t = (node.Index / (float) graph.nodes.Count);
+       
+        var p = Mathf.Lerp(0, Mathf.PI * 2, t);
+       
+        return new Vector3(Mathf.Sin(p), Mathf.Cos(p), 0) * radius;
+        
     }
+
 
 }

@@ -4,6 +4,7 @@
 public readonly struct Edge:IEquatable<Edge>
 {
     public readonly Node From;
+    
     public readonly Node To;
 
     public Edge(Node from, Node to)
@@ -12,6 +13,8 @@ public readonly struct Edge:IEquatable<Edge>
         To   = to;
     }
 
+    
+    
     public bool TryGetNeighbor(Node node, out Node neighbor)
     {
         
@@ -28,6 +31,7 @@ public readonly struct Edge:IEquatable<Edge>
         }
 
         neighbor = new Node(int.MinValue);
+      
         return false;
     }
 

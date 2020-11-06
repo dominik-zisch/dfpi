@@ -34,38 +34,57 @@ public class Graph
         
         edges = new List<Edge>();
     }
-    
+
+
+    #region NECESSARY FUNCTIONS
+
     public void AddNode(Node node)
     {
         nodes.Add(node);
     }
-   
     
     public void AddNodes(IEnumerable<Node> _nodes)
     {
         nodes.AddRange(_nodes);
     }
-
     
     public void AddEdge(Node from, Node to)
     {
-        edges.Add(new Edge(from,to));
+        edges.Add(new Edge(from, to));
     }
-
     
     public void AddEdges(IEnumerable<Edge> _edges)
     {
         edges.AddRange(_edges);
     }
+    
+    public List<Node> Neighbors(Node node)
+    {
+        var neighbors = new List<Node>();
+
+        foreach (var edge in edges)
+        {
+            if (edge.TryGetNeighbor(node, out var neighbor))
+            {
+                neighbors.Add(neighbor);
+            }
+        }
+
+        return neighbors;
+    }
+
+    #endregion
 
     
+    #region NICE TO HAVE FUNCTIONS
+   
     public void AddEdges(Node from, Node[] to)
     {
         var _edges = new Edge[to.Length];
      
         for (var i = 0; i < _edges.Length; i++)
         {
-            _edges[i] = new Edge(from,to[i]);
+            _edges[i] = new Edge(from, to[i]);
         }
         
         edges.AddRange(_edges);
@@ -100,6 +119,7 @@ public class Graph
         edges.AddRange(_edges);
     }
    
+    
     public void AddEdgesOneToOne(int[] from, int[] to)
     {
         if (from.Length != to.Length)
@@ -134,20 +154,9 @@ public class Graph
         
         edges.AddRange(_edges);
     }
+    
+    #endregion
 
 
-    public List<Node> Neighbors(Node node)
-    {
-        var neighbors  = new List<Node>();
-
-        foreach (var edge in edges)
-        {
-            if (edge.TryGetNeighbor(node, out var neighbor))
-            {
-                neighbors.Add(neighbor);
-            }
-        }
-
-        return neighbors;
-    }
+   
 }

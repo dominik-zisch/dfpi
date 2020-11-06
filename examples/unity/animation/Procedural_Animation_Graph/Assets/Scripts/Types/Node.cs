@@ -6,8 +6,6 @@ public struct Node:IEquatable<Node>
 {
     public readonly int Index;
 
-    public bool IsValid => Index >= 0;
-    
     public Node(int index)
     {
         Index = index;
@@ -17,6 +15,8 @@ public struct Node:IEquatable<Node>
     {
         return g.Neighbors(this);
     }
+    
+    public bool IsValid => Index >= 0;
 
     public static explicit operator Node(int i)
     {

@@ -32,13 +32,13 @@ namespace Editor
                 foreach (var node in nodes)
                 {
                     EditorGUILayout.IntField(node.Index, new GUIStyle(GUI.skin.box){fixedWidth = 32, alignment = TextAnchor.MiddleCenter});
-                }  
-
-                
+                }
             }
+            
             EditorGUILayout.EndFoldoutHeaderGroup();
 
             foldEdges = EditorGUILayout.BeginFoldoutHeaderGroup(foldEdges, "Edges", style);
+            
             if (foldEdges)
             {
 

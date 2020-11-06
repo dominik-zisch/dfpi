@@ -40,8 +40,7 @@ public class GraphObject : MonoBehaviour
         
         GenerateRandomGraph(nodeCount, randomEdgeCount);
     }
-
-
+    
     public void GenerateRandomGraph(int nodeCount, int edgeCount)
     {
         graph = new Graph(nodeCount);
