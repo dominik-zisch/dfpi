@@ -62,8 +62,6 @@ public class AnimationGraphBuilder : MonoBehaviour
 
         Finalize();
     }
-   
-    
     
     
     
@@ -175,6 +173,7 @@ public class AnimationGraphBuilder : MonoBehaviour
     {
         EditorUtility.SetDirty(controller);
         AssetDatabase.SaveAssets();
+        GetComponent<Animator>().runtimeAnimatorController = controller;
     }
     
     
