@@ -1,0 +1,49 @@
+#pragma kernel DistanceToPoint
+#pragma kernel ReadSDF
+
+  /*
+struct MyCustomData
+{
+    float valueA;
+    float valueB;
+    int valueC;
+    float3 position;
+};
+
+    */
+
+//RWStructureBuffer<MyCustomData> Buffer_2;   
+//RWStructureBuffer<float> Buffer_2; 
+//StructureBuffer<float> Buffer_1;
+//Texture2D<float> Example_1
+
+Texture3D<float> VF;
+RWTexture2D<float> SDF;
+
+float4 Point;
+float2 TexDims;
+float4x4 DomainTransformation;
+
+//[numthreads(512,1,1)]    
+[numthreads(8,8,1)]
+void DistanceToPoint (uint3 id : SV_DispatchThreadID)
+{
+    //Buffer_2[id.x] = 1;
+    float2 currentPixelPosition = float2(id.xy);
+    float2 observedPointInXZPlane = Point.xy; 
+
+    float4 worldCoords = float4(currentPixelPosition / TexDims,0,1);
+    worldCoords -= float4(0.5,0.5,0,0);
+    
+    worldCoords = mul(DomainTransformation, worldCoords);
+
+    float L = length(worldCoords-observedPointInXZPlane);
+    
+    SDF[id.xy] = L;
+}
+                       
+[numthreads(8,8,1)]         
+void ReadSDF (uint3 id : SV_DispatchThreadID)
+{
+    SDF[id.xy] = VF[uint3(id.x,id.y,Point.z*64)];
+}
