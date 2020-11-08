@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369043053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -276,10 +276,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   computeShader: {fileID: 7200000, guid: ad76d45bbe2bfed40802e0b845866460, type: 3}
-  sdfTex: {fileID: 8400000, guid: 29a11347e8af52e45ac3f9351ed3e45f, type: 2}
-  Point: {fileID: 369043054}
-  Plane: {fileID: 1138892517}
-  VF: {fileID: 11700000, guid: cd65334dc810c474aa9a48e518a437da, type: 2}
+  algorithm: 1
+  bounds: {fileID: 0}
+  volume: {fileID: 11700000, guid: cd65334dc810c474aa9a48e518a437da, type: 2}
+  point: {fileID: 369043054}
+  plane: {fileID: 1138892517}
+  slice: {fileID: 8400000, guid: 29a11347e8af52e45ac3f9351ed3e45f, type: 2}
 --- !u!4 &714131115
 Transform:
   m_ObjectHideFlags: 0

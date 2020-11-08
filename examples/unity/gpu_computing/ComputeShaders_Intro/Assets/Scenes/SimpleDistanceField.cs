@@ -3,39 +3,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Serialization;
 
 public class SimpleDistanceField : MonoBehaviour
 {
-    public  ComputeShader computeShader;
-    public  RenderTexture sdfTex;
-    public  Transform     Point;
-    public  Transform     Plane;
-    
-    private int           kernelIndex;
-    private Vector3Int    threadsPerGroup;
-    private RenderTexture tempTexture2D;
-    private RenderTexture tempTexture3D;
+    public enum Algorithm
+    {
+        PointSDF,
+        VolumeSlice
+    }
 
-    public Texture3D VF;
+    [Header("References")]
+    public ComputeShader computeShader;
+   
+    [Header("Inputs")]
+    public Algorithm algorithm;
+    public BoxCollider bounds;
+    public Texture3D   volume;
+    public Transform   point;
+    public Transform   plane;
     
+    [Header("Outputs")]
+    public RenderTexture slice;
+  
+    
+    private int           _kernelIndex;
+    private Vector3Int    _threadsPerGroup;
+    private RenderTexture _tempTexture2D;
+    private RenderTexture _tempTexture3D;
+    private Algorithm     _previousAlgorithm;
+
+    private const string PointSDFKernelName     = "DistanceToPoint";
+    private const string VolumeSlicerKernelName = "ReadSDF";
+
+
     //public ComputeBuffer buffer;
     
     private void Start()
     {
         if (computeShader == null)
             return;
-        
-       Init(); 
+
+        Init(CurrentKernel);
     }
 
     private void Update()
     {
         if (computeShader == null)
             return;
+
+        if (_previousAlgorithm != algorithm)
+        {
+           Init(CurrentKernel);
+           _previousAlgorithm = algorithm;
+        }   
         
-       Schedule();
-      
-       Execute();
+        Schedule();
+
+        Execute();
     }
 
     private void OnDestroy()
@@ -52,69 +77,85 @@ public class SimpleDistanceField : MonoBehaviour
     {
         Clear();
     }
-    
-    
-    
-    
-    private void Init()
+
+
+    private string CurrentKernel
     {
-        //kernelIndex = computeShader.FindKernel("DistanceToPoint");
-        kernelIndex = computeShader.FindKernel("ReadSDF"); 
-        
-        computeShader.GetKernelThreadGroupSizes(kernelIndex, out var x ,out var y, out var z);
-        threadsPerGroup                 = new Vector3Int((int)x, (int)y, (int)z);
-        
-        tempTexture2D                   = new RenderTexture(sdfTex.width, sdfTex.height, 0, sdfTex.graphicsFormat);
-        // IMPORTANT!
-        tempTexture2D.enableRandomWrite = true;
-        tempTexture2D.Create();
+        get
+        {
+            switch (algorithm)
+            {
+                case Algorithm.PointSDF:
+                    return PointSDFKernelName;
+                case Algorithm.VolumeSlice:
+                    return VolumeSlicerKernelName;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+    }
+    
+    private void Init(string kernelName)
+    {
+        _kernelIndex = computeShader.FindKernel(kernelName);
+        computeShader.GetKernelThreadGroupSizes(_kernelIndex, out var x, out var y, out var z);
+        _threadsPerGroup = new Vector3Int((int) x, (int) y, (int) z);
 
-        tempTexture3D   = new RenderTexture(VF.width, VF.height, 0, VF.graphicsFormat);
-        // NECESSARY FOR 3D TEXTURES
-        tempTexture3D.volumeDepth       = VF.depth;
-        tempTexture3D.dimension         = TextureDimension.Tex3D;
-        tempTexture3D.enableRandomWrite = true;
-        tempTexture3D.Create();
-        
-        Graphics.CopyTexture(VF,tempTexture3D);
-       // Graphics.Blit(VF, tempTexture3D);
+        Clear();
 
+        _tempTexture2D = new RenderTexture(slice.width, slice.height, 0, slice.graphicsFormat)
+        {
+                enableRandomWrite = true
+        };
+        _tempTexture2D.Create();
+
+        _tempTexture3D = new RenderTexture(volume.width, volume.height, 0, volume.graphicsFormat)
+        {
+                volumeDepth       = volume.depth,
+                dimension         = TextureDimension.Tex3D,
+                enableRandomWrite = true
+        };
+        _tempTexture3D.Create();
+
+        Graphics.CopyTexture(volume, _tempTexture3D);
     }
 
     private void Schedule()
     {
-       computeShader.SetTexture(kernelIndex, "SDF", tempTexture2D);
-       computeShader.SetTexture(kernelIndex, "VF", tempTexture3D);
+       computeShader.SetTexture(_kernelIndex, "SDF", _tempTexture2D);
+       computeShader.SetTexture(_kernelIndex, "VF", _tempTexture3D);
 
-       computeShader.SetVector("Point", Point.position);
-       computeShader.SetVector("TexDims", new Vector4(sdfTex.width,sdfTex.height));
-       computeShader.SetMatrix("DomainTransformation", Plane.localToWorldMatrix);
+       computeShader.SetVector("Point", point.position);
+       computeShader.SetVector("TexDims", new Vector4(slice.width,slice.height));
+       computeShader.SetMatrix("DomainTransformation", plane.localToWorldMatrix);
     }
 
     private void Execute()
     {
-        int width  = sdfTex.width;
-        int height = sdfTex.height;
-        int depth  = 1; //sdfTex.volumeDepth;
+        int width  = slice.width;
+        int height = slice.height;
+        int depth  = 1; //slice.volumeDepth;
 
-        int xThreads = threadsPerGroup.x;
-        int yThreads = threadsPerGroup.y;
-        int zThreads = threadsPerGroup.z;
+        int xThreads = _threadsPerGroup.x;
+        int yThreads = _threadsPerGroup.y;
+        int zThreads = _threadsPerGroup.z;
 
         int xGroups = width  / xThreads;
         int yGroups = height / yThreads;
         int zGroups = depth  / zThreads;
         
-        computeShader.Dispatch(kernelIndex,xGroups,yGroups,zGroups); 
+        computeShader.Dispatch(_kernelIndex,xGroups,yGroups,zGroups); 
         
-        Graphics.Blit(tempTexture2D, sdfTex);
+        Graphics.Blit(_tempTexture2D, slice);
     }
 
     private void Clear()
     {
-        tempTexture2D.Release();      
-        tempTexture3D.Release();
-        //buffer.Dispose();
+        if (_tempTexture2D!=null)
+            _tempTexture2D.Release();      
+       
+        if (_tempTexture3D != null)
+            _tempTexture3D.Release();
     }
     
 }
