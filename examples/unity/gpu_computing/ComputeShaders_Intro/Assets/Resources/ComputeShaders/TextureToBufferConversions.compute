@@ -1,0 +1,116 @@
+#pragma kernel RenderTexture2DToBuffer_Float
+#pragma kernel RenderTexture3DToBuffer_Float
+
+#pragma kernel RenderTexture2DToBuffer_Float2
+#pragma kernel RenderTexture3DToBuffer_Float2
+
+#pragma kernel RenderTexture2DToBuffer_Float3
+#pragma kernel RenderTexture3DToBuffer_Float3
+
+#pragma kernel RenderTexture2DToBuffer_Float4
+#pragma kernel RenderTexture3DToBuffer_Float4
+
+
+
+//======================================================================================================================
+// FLOAT TEXTURES
+//======================================================================================================================
+Texture2D<float> Input2DTexture_Float;
+Texture3D<float> Input3DTexture_Float;
+RWStructuredBuffer<float> OutputBuffer_Float;
+
+[numthreads(8,8,1)]
+void RenderTexture2DToBuffer_Float (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h;
+    Input2DTexture_Float.GetDimensions(w,h);
+
+    OutputBuffer_Float[(id.x + id.y*w)] = Input2DTexture_Float[id.xy];
+}
+
+[numthreads(8,8,8)]
+void RenderTexture3DToBuffer_Float (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h,z;
+    Input3DTexture_Float.GetDimensions(w,h,z);
+    
+    OutputBuffer_Float[ (id.x + id.y*w + id.z * w * h)] = Input3DTexture_Float[id.xyz];
+}
+
+
+//======================================================================================================================
+// FLOAT 2 TEXTURES
+//======================================================================================================================
+Texture2D<float2> Input2DTexture_Float2;
+Texture3D<float2> Input3DTexture_Float2;
+RWStructuredBuffer<float2> OutputBuffer_Float2;
+
+[numthreads(8,8,1)]
+void RenderTexture2DToBuffer_Float2 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h;
+    Input2DTexture_Float2.GetDimensions(w,h);
+
+    OutputBuffer_Float2[(id.x + id.y*w)] = Input2DTexture_Float2[id.xy];
+}
+
+[numthreads(8,8,8)]
+void RenderTexture3DToBuffer_Float2 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h,z;
+    Input3DTexture_Float2.GetDimensions(w,h,z);
+    
+    OutputBuffer_Float2[ (id.x + id.y*w + id.z * w * h)] = Input3DTexture_Float2[id.xyz];
+}
+
+
+//======================================================================================================================
+// FLOAT 3 TEXTURES
+//======================================================================================================================
+Texture2D<float3> Input2DTexture_Float3;
+Texture3D<float3> Input3DTexture_Float3;
+RWStructuredBuffer<float3> OutputBuffer_Float3;
+
+[numthreads(8,8,1)]
+void RenderTexture2DToBuffer_Float3 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h;
+    Input2DTexture_Float3.GetDimensions(w,h);
+
+    OutputBuffer_Float3[(id.x + id.y*w)] = Input2DTexture_Float3[id.xy];
+}
+
+[numthreads(8,8,8)]
+void RenderTexture3DToBuffer_Float3 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h,z;
+    Input3DTexture_Float3.GetDimensions(w,h,z);
+    
+    OutputBuffer_Float3[ (id.x + id.y*w + id.z * w * h)] = Input3DTexture_Float3[id.xyz];
+}
+
+
+//======================================================================================================================
+// FLOAT 4 TEXTURES
+//======================================================================================================================
+Texture2D<float4> Input2DTexture_Float4;
+Texture3D<float4> Input3DTexture_Float4;
+RWStructuredBuffer<float4> OutputBuffer_Float4;
+
+[numthreads(8,8,1)]
+void RenderTexture2DToBuffer_Float4 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h;
+    Input2DTexture_Float4.GetDimensions(w,h);
+
+    OutputBuffer_Float4[(id.x + id.y*w)] = Input2DTexture_Float4[id.xy];
+}
+
+[numthreads(8,8,8)]
+void RenderTexture3DToBuffer_Float4 (uint3 id : SV_DispatchThreadID)
+{
+    uint w,h,z;
+    Input3DTexture_Float4.GetDimensions(w,h,z);
+    
+    OutputBuffer_Float4[ (id.x + id.y*w + id.z * w * h)] = Input3DTexture_Float4[id.xyz];
+}
