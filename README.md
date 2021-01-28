@@ -16,7 +16,7 @@ Workshop Resources
 ### 2021
 - [**Unity Workshop - Quantum Magick**](/workshops/unity/2021_quantum_magick)
 ### 2020
-* [**Unity Workshop - Habits & Habitats**](/workshops/unity)
+* [**Unity Workshop - Habits & Habitats**](/workshops/unity/2020_habits_habitats)
 
 Code Snippets
 ---
