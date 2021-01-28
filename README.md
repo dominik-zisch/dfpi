@@ -14,7 +14,7 @@ _This repository holds the coding resources and teaching material curated by the
 Workshop Resources
 ---
 ### 2021
--
+- [**Unity Workshop**](/workshops/unity/2021_quantum_magick)
 ### 2020
 * [**Unity Workshop**](https://github.com/GeorgeAdamon/dfpi/tree/master/workshops/unity)
 
