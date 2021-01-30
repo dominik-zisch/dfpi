@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114848538302285420, guid: 7c62cd7b0bcf841ec87b0c7e28211e7d, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 83.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c62cd7b0bcf841ec87b0c7e28211e7d, type: 3}
 --- !u!1001 &1490502760
@@ -207,6 +211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 692681396624637917, guid: c2b70d6fb5c04c5448363b4a912af3ac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3804596787049440801, guid: c2b70d6fb5c04c5448363b4a912af3ac, type: 3}
       propertyPath: m_Name
       value: Default_Environment
@@ -320,7 +328,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 60
+  field of view: 83.6
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
