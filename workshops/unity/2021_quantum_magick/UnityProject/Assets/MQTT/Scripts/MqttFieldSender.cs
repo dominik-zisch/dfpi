@@ -5,6 +5,7 @@ using System.Reflection;
 using M2MqttUnity;
 using UnityEngine;
 
+[AddComponentMenu("MQTT/Field Sender")]
 public class MqttFieldSender : MonoBehaviour
 {
     #region Inspector
