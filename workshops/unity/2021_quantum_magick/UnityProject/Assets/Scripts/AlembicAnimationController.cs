@@ -2,7 +2,7 @@
 using UnityEngine.Formats.Alembic.Importer;
 using UnityEngine.InputSystem;
 
-public class AlembicKeyboardController_LocalInputAction : MonoBehaviour
+public class AlembicAnimationController : MonoBehaviour
 {
     // REFERENCE (PLACEHOLDER) TO OUR ALEMBIC OBJECT
     public AlembicStreamPlayer alembic;
@@ -14,7 +14,6 @@ public class AlembicKeyboardController_LocalInputAction : MonoBehaviour
     [Range(0, 0.2F)]
     public float speed;
 
-    // WHEN THE GAME BEGINS
     public void Start()
     {
         // ENABLE OUR INPUT ACTION
@@ -24,8 +23,14 @@ public class AlembicKeyboardController_LocalInputAction : MonoBehaviour
     // AT EVERY FRAME
     void Update()
     {
-        // MOVE THE CURRENT TIME OF THE ALEMBIC BACKWARD OR FORWARD DEPENDING ON OUR KEY INPUT
-        alembic.CurrentTime += speed * inputKeys.ReadValue<float>();    
+        // MOVE THE CURRENT TIME OF THE ALEMBIC BACKWARD OR FORWARD DEPENDING ON THE PROVIDED VALUE
+        alembic.CurrentTime += speed * GetValue();    
+    }
+
+    public virtual float GetValue()
+    {
+        // GET KEYBOARD INPUT
+        return inputKeys.ReadValue<float>();
     }
 
 }

@@ -4,6 +4,7 @@
     <attachedFolders />
     <explicitIncludes>
       <Path>Library/PackageCache/com.autodesk.fbx@3.1.0-preview.2</Path>
+      <Path>Library/PackageCache/com.dbrizov.naughtyattributes@fc456992b4</Path>
       <Path>Library/PackageCache/com.ptc.vuforia.engine@716a8216fe</Path>
       <Path>Library/PackageCache/com.unity.animation.rigging@1.0.3</Path>
       <Path>Library/PackageCache/com.unity.burst@1.4.4</Path>
