@@ -1,0 +1,1159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1562061561306290891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8012766595829957036}
+  m_Layer: 0
+  m_Name: MQTT Tester
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8012766595829957036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562061561306290891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.37605274, y: 5.226488, z: -8.015839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9007726214177936371}
+  - {fileID: 9007726212893802379}
+  - {fileID: 9007726213075955088}
+  - {fileID: 9007726213321769309}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9007726212893802368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007726212893802379}
+  - component: {fileID: 9007726212893802378}
+  - component: {fileID: 9007726212893802377}
+  - component: {fileID: 9007726212893802376}
+  - component: {fileID: 9007726212893802375}
+  - component: {fileID: 9007726212893802374}
+  - component: {fileID: 9007726212893802373}
+  - component: {fileID: 9007726212893802372}
+  - component: {fileID: 9007726212893802371}
+  - component: {fileID: 9007726212893802370}
+  - component: {fileID: 9007726212893802369}
+  m_Layer: 0
+  m_Name: Field Sender Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9007726212893802379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8012766595829957036}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9007726212893802378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/ba
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: baSend
+  _keepSending: 0
+--- !u!114 &9007726212893802377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/b
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: bSend
+  _keepSending: 0
+--- !u!114 &9007726212893802376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/i
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: iSend
+  _keepSending: 0
+--- !u!114 &9007726212893802375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/f
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: fSend
+  _keepSending: 0
+--- !u!114 &9007726212893802374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/s
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: sSend
+  _keepSending: 0
+--- !u!114 &9007726212893802373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/v2i
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: v2iSend
+  _keepSending: 0
+--- !u!114 &9007726212893802372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/v3i
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: v3iSend
+  _keepSending: 0
+--- !u!114 &9007726212893802371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/v2
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: v2Send
+  _keepSending: 0
+--- !u!114 &9007726212893802370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/v3
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: v3Send
+  _keepSending: 0
+--- !u!114 &9007726212893802369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726212893802368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7766348ad23a3486795d388d297ed2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 60
+  _topic: mqtt/test/v4
+  _dataSource: {fileID: 9007726214177936369}
+  _fieldName: v4Send
+  _keepSending: 0
+--- !u!1 &9007726213075955109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007726213075955088}
+  - component: {fileID: 9007726213075955119}
+  - component: {fileID: 9007726213075955118}
+  - component: {fileID: 9007726213075955117}
+  - component: {fileID: 9007726213075955116}
+  - component: {fileID: 9007726213075955115}
+  - component: {fileID: 9007726213075955114}
+  - component: {fileID: 9007726213075955113}
+  - component: {fileID: 9007726213075955112}
+  - component: {fileID: 9007726213075955111}
+  - component: {fileID: 9007726213075955110}
+  m_Layer: 0
+  m_Name: Property Sender Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &9007726213075955088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 737.48584, y: 472.47614, z: 2396.379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8012766595829957036}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9007726213075955119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/ba
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: BA
+  _keepSending: 0
+--- !u!114 &9007726213075955118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/b
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: B
+  _keepSending: 0
+--- !u!114 &9007726213075955117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/i
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: I
+  _keepSending: 0
+--- !u!114 &9007726213075955116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/f
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: F
+  _keepSending: 0
+--- !u!114 &9007726213075955115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/s
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: S
+  _keepSending: 0
+--- !u!114 &9007726213075955114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/v2i
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: V2I
+  _keepSending: 0
+--- !u!114 &9007726213075955113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/v3i
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: V3I
+  _keepSending: 0
+--- !u!114 &9007726213075955112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/v2
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: V2
+  _keepSending: 0
+--- !u!114 &9007726213075955111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/v3
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: V3
+  _keepSending: 0
+--- !u!114 &9007726213075955110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213075955109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ac167d9c8eb34c6eb5922934c514984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _framerate: 30
+  _topic: mqtt/test/v4
+  _dataSource: {fileID: 9007726214177936369}
+  _propertyName: V4
+  _keepSending: 0
+--- !u!1 &9007726213321769298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007726213321769309}
+  - component: {fileID: 9007726213321769308}
+  - component: {fileID: 9007726213321769307}
+  - component: {fileID: 9007726213321769306}
+  - component: {fileID: 9007726213321769305}
+  - component: {fileID: 9007726213321769304}
+  - component: {fileID: 9007726213321769303}
+  - component: {fileID: 9007726213321769302}
+  - component: {fileID: 9007726213321769301}
+  - component: {fileID: 9007726213321769300}
+  - component: {fileID: 9007726213321769299}
+  m_Layer: 0
+  m_Name: Receiver Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9007726213321769309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 737.48584, y: 472.47614, z: 2396.379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8012766595829957036}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9007726213321769308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/ba
+  _dataType: 1
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: BytesReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/b
+  _dataType: 2
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: BoolReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/i
+  _dataType: 3
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: IntReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/f
+  _dataType: 4
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: FloatReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/s
+  _dataType: 5
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: StringReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/v2i
+  _dataType: 6
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: Vector2IntReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/v3i
+  _dataType: 7
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: Vector3IntReceived
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/v2
+  _dataType: 8
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: Vector2Received
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/v3
+  _dataType: 9
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: Vector3Received
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9007726213321769299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726213321769298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb4403ba8ea4e4300a4ca0e9e3aa23ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _mqtt: {fileID: 0}
+  _topic: mqtt/test/v4
+  _dataType: 10
+  _bytesReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _boolReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _intReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _floatReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _stringReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3IntReceived:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector2Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector3Received:
+    m_PersistentCalls:
+      m_Calls: []
+  _vector4Received:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9007726214177936369}
+        m_TargetAssemblyTypeName: PropertySenderTest, Assembly-CSharp
+        m_MethodName: Vector4Received
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &9007726214177936271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9007726214177936371}
+  - component: {fileID: 9007726214177936369}
+  m_Layer: 0
+  m_Name: Test Script
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9007726214177936371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726214177936271}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 737.48584, y: 472.47614, z: 2396.379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8012766595829957036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9007726214177936369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007726214177936271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b86907e61e8e54af8a54ce4b5559f53a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baRecv: 
+  bRecv: 0
+  iRecv: 0
+  fRecv: 0
+  sRecv: 
+  v2iRecv: {x: 0, y: 0}
+  v3iRecv: {x: 0, y: 0, z: 0}
+  v2Recv: {x: 0, y: 0}
+  v3Recv: {x: 0, y: 0, z: 0}
+  v4Recv: {x: 0, y: 0, z: 0, w: 0}
+  baSend: 
+  bSend: 0
+  iSend: 0
+  fSend: 0
+  sSend: 
+  v2iSend: {x: 0, y: 0}
+  v3iSend: {x: 0, y: 0, z: 0}
+  v2Send: {x: 0, y: 0}
+  v3Send: {x: 0, y: 0, z: 0}
+  v4Send: {x: 0, y: 0, z: 0, w: 0}
+  _ba: 
+  _b: 0
+  _i: 0
+  _f: 0
+  _s: 
+  _v2i: {x: 0, y: 0}
+  _v3i: {x: 0, y: 0, z: 0}
+  _v2: {x: 0, y: 0}
+  _v3: {x: 0, y: 0, z: 0}
+  _v4: {x: 0, y: 0, z: 0, w: 0}
