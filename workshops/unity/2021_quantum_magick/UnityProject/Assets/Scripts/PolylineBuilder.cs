@@ -14,6 +14,7 @@ public class PolylineBuilder : MonoBehaviour
     [Tooltip("The collection of all observed positions.")]
     public List<Vector3> trackedPoints;
 
+    
     [Tooltip("Consecutive points closer than this distance, will NOT be added to the polyline.")]
     [Range(0.0001f,0.1f)]
     public float minDistanceThreshold;
@@ -116,7 +117,7 @@ public class PolylineBuilder : MonoBehaviour
 
     private string BuildPolylineName()
     {
-        return $"Polyline_{trackedPoints.Count}-Vertices_{DateTime.Now:yyyy-MM-dd-HH-mm-ss}.csv";
+        return $"{observedObject.name}_Id:{Guid.NewGuid()}_Polyline_{trackedPoints.Count}-Vertices_{DateTime.Now:yyyy-MM-dd-HH-mm-ss}.csv";
     }
 
     private string BuildDirectory()

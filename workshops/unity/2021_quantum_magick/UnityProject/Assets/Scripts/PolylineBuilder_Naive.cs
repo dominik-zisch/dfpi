@@ -10,7 +10,7 @@ public class PolylineBuilder_Naive : MonoBehaviour
     [Tooltip("The collection of all observed positions.")]
     public List<Vector3> trackedPoints;
     
-    private void OnEnable()
+    private void Start()
     {
         // Initialize an empty container
         trackedPoints = new List<Vector3>();
@@ -21,8 +21,11 @@ public class PolylineBuilder_Naive : MonoBehaviour
         // Add a new point per frame
         trackedPoints.Add(observedObject.transform.position);
     }
-    
-    public void SavePolyline()
-    { }
+
+    private void SavePolyline()
+    {
+        
+        
+    }
     
 }
