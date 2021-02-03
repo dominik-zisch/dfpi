@@ -147,7 +147,7 @@ namespace StandardAssets.Characters.Common
 		/// <summary>
 		/// Gets/sets the move input vector
 		/// </summary>
-		public Vector2 moveInput { get; private set; }
+		public Vector2 moveInput { get;  set; }
 
 		/// <summary>
 		/// Gets whether or not the jump input is currently applied

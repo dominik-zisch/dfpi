@@ -961,7 +961,7 @@ namespace StandardAssets.Characters.ThirdPerson
         }
 
         // Logic for dealing with animation on jumping. Fires when the 'm_Motor' enters a jump.
-        void OnJumpStarted()
+         void OnJumpStarted()
         {
             if (!m_IsGrounded)
             {

@@ -1176,6 +1176,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4953066554714662042, guid: da8300ca18a9921428cbe77397c66b64, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4953066554714662044, guid: da8300ca18a9921428cbe77397c66b64, type: 3}
       propertyPath: m_LocalPosition.y
       value: 3.7600002
@@ -1591,6 +1595,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3804596786990546684, guid: c2b70d6fb5c04c5448363b4a912af3ac, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: 2492dad999927ca4cabca59fb1f4ccfe, type: 2}
     - target: {fileID: 3804596787049440801, guid: c2b70d6fb5c04c5448363b4a912af3ac, type: 3}
       propertyPath: m_Name
       value: Default_Environment
@@ -1757,6 +1765,7 @@ MonoBehaviour:
           m_StringArgument: Stop
           m_BoolArgument: 0
         m_CallState: 1
+  isColliding: 0
 --- !u!1 &1813266113
 GameObject:
   m_ObjectHideFlags: 0

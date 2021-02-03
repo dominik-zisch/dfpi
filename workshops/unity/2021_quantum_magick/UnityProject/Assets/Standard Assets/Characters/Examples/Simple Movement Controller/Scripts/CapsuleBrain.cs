@@ -126,7 +126,7 @@ namespace StandardAssets.Characters.Examples.SimpleMovementController
 		}
 
 		// Handles jumping
-		void OnJumpPressed()
+		public void OnJumpPressed()
 		{
 			if (controllerAdapter.isGrounded)
 			{
