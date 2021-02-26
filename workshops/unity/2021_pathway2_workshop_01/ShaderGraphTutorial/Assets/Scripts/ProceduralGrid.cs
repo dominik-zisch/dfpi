@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using NaughtyAttributes;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshRenderer), typeof(MeshFilter))]
-[ExecuteAlways]
 
 public class ProceduralGrid : MonoBehaviour
 {
@@ -36,18 +37,19 @@ public class ProceduralGrid : MonoBehaviour
     [BoxGroup("Noise Animator")] [ShowIf("animateNoise")] public float xFactor = 0;
     [BoxGroup("Noise Animator")] [ShowIf("animateNoise")] public float yFactor = 0;
 
-    [HideInInspector] public Mesh GeneratedMesh;
+     public Mesh GeneratedMesh;
 
     #endregion
 
     #region Private Variables
     
-    private Vector3[] vertices;
-    private Vector2[] uvs;
-    private int[] triangles;
-    private bool Changed = false;
-    private MeshFilter mf;
+    private Vector3[]    vertices;
+    private Vector2[]    uvs;
+    private int[]        triangles;
+    private bool         Changed = false;
+    private MeshFilter   mf;
     private MeshRenderer mr;
+    private Mesh         mfMesh;
     private List<string> PlaneValues { get { return new List<string>() { "XY", "XZ", "YZ" }; } }
 
     #endregion
@@ -56,6 +58,15 @@ public class ProceduralGrid : MonoBehaviour
     
     private void Awake()
     {
+        // LOAD ALL THE THINGS THAT SHOULDN'T CHANGE WHEN THE GAME BEGINS
+        // THIS IS CALLED CACHING
+        mf            = GetComponent<MeshFilter>();
+        mr            = GetComponent<MeshRenderer>();
+        mr.material   = Resources.Load("Material/Standard", typeof(Material)) as Material;
+        mf.sharedMesh = new Mesh();
+        mfMesh        = mf.sharedMesh;
+        mfMesh.MarkDynamic();
+                   
         Generate();
     }
 
@@ -66,21 +77,15 @@ public class ProceduralGrid : MonoBehaviour
 
     private void Update()
     {
-        if (mf == null) mf = GetComponent<MeshFilter>();
-        if (mr == null) mr = GetComponent<MeshRenderer>();
-
         if (Changed)
         {
-            Debug.Log("FUCK YOU");
-            mf.sharedMesh = new Mesh();
-            mf.sharedMesh.vertices = GeneratedMesh.vertices;
-            mf.sharedMesh.triangles = GeneratedMesh.triangles;
-            mf.sharedMesh.uv = GeneratedMesh.uv;
-            mf.sharedMesh.normals = GeneratedMesh.normals;
-            mr.material = Resources.Load("Material/Standard", typeof(Material)) as Material;
-            Changed = false;
+            // COPY MESH DATA TO THE MESH FILTER
+            MeshUtils.CopyMeshSlow(GeneratedMesh, mfMesh);
+            
+            Changed       = false;
         }
 
+        // CONTINUOUSLY GENERATE A NEW MESH
         if (animateNoise)
         {
             noiseXOffset = noiseXOffset + xFactor * Time.deltaTime;
@@ -101,52 +106,91 @@ public class ProceduralGrid : MonoBehaviour
         }
     }
 
+    
+    // ALWAYS DEALLOCATE THE MESH WHEN IT'S NO LONGER RELEVANT
+    private void OnApplicationQuit()
+    {
+        Destroy(GeneratedMesh);
+        GeneratedMesh = null;
+    }
+    
+    private void OnDisable()
+    {
+        Destroy(GeneratedMesh);
+        GeneratedMesh = null;
+    }
+    
+    private void OnDestroy()
+    {
+        Destroy(GeneratedMesh);
+        GeneratedMesh = null;
+    }
+   
     #endregion
 
 
     #region Custom methods
+  
     public void Generate()
-    { 
-        GeneratedMesh = new Mesh
+    {
+        if (GeneratedMesh != null)
         {
-            name = string.Format("Procedural Grid {0}x{1}", XCount, YCount)
-        };
+            // IF A MESH IS ALREADY GENERATED, WE JUST CLEAR IT !
+            GeneratedMesh.Clear();
+        }   
+        else
+        {
+            GeneratedMesh = new Mesh();
+        }
+
+        GeneratedMesh.name = string.Format("Procedural Grid {0}x{1}", XCount, YCount);
 
         int XCount_Vertices = XCount + 1;
         int YCount_Vertices = YCount + 1;
 
         vertices = new Vector3[(XCount_Vertices) * (YCount_Vertices)];
         uvs = new Vector2[vertices.Length];
+        
+        // WE HAVE X * Y QUADS
+        // EACH QUAD HAS 2 TRIANGLES, SO WE HAVE X * Y * 2 TRIANGLES
+        // EACH TRIANGLE HAS 3 INDICES, SO WE HAVE X * Y * 2 * 3 INDICES
         triangles = new int[XCount * YCount * 6];
 
         for (int y = 0; y < YCount_Vertices; y++)
         {
             for (int x = 0; x < XCount_Vertices; x++)
             {
-                int vi = y * XCount_Vertices + x;
-                int ti = (y * XCount + x) * 6;
+                // DETERMINE THE VERTEX INDEX THAT WE SHOULD WRITE TO (IN THE BIG VERTEX ARRAY)
+                int currentVertexIndex   = y * XCount_Vertices + x;
+               
+                // DETERMINE THE TRIANGLE INDEX THAT WE SHOULD WRITE TO (IN THE BIG TRIANGLE ARRAY)
+                int currentTriangleIndex = (y * XCount + x) * 6;
 
+                // VERTEX COORDINATES (GRID)
                 float vx = x * (XSize / XCount);
                 float vy = y * (YSize / YCount);
+                
+                // OPTIONAL PERLIN NOISE
                 float vz = zNoise
                     ? MaxNoiseSize * Mathf.PerlinNoise(noiseXOffset + noiseXScale * vx, noiseYOffset + noiseYScale * vy)
                     : 0;
 
+                // SELECT A PLANE
                 if (plane == "XY") 
-                    vertices[vi] = new Vector3(vx, vy, vz);
+                    vertices[currentVertexIndex] = new Vector3(vx, vy, vz);
                 else if (plane == "XZ")
-                    vertices[vi] = new Vector3(vx, vz, vy);
+                    vertices[currentVertexIndex] = new Vector3(vx, vz, vy);
                 else
-                    vertices[vi] = new Vector3(vz, vx, vy);
+                    vertices[currentVertexIndex] = new Vector3(vz, vx, vy);
 
 
                 if (StretchTexture)
                 {
-                    uvs[vi] = new Vector2((float)x / (float)XCount, (float)y / (float)YCount);
+                    uvs[currentVertexIndex] = new Vector2(x / (float)XCount, y / (float)YCount);
                 }
                 else
                 {
-                    uvs[vi] = new Vector2(x * (XSize / XCount), y * (YSize / YCount));
+                    uvs[currentVertexIndex] = new Vector2(x * (XSize / XCount), y * (YSize / YCount));
                 }
 
                 if (CreateFaces)
@@ -155,36 +199,38 @@ public class ProceduralGrid : MonoBehaviour
                     {
                         if (reverse)
                         {
-                            triangles[ti + 0] = vi;
-                            triangles[ti + 1] = vi + 1;
-                            triangles[ti + 2] = vi + XCount_Vertices;
+                            triangles[currentTriangleIndex + 0] = currentVertexIndex;
+                            triangles[currentTriangleIndex + 1] = currentVertexIndex + 1;
+                            triangles[currentTriangleIndex + 2] = currentVertexIndex + XCount_Vertices;
 
-                            triangles[ti + 3] = vi + 1;
-                            triangles[ti + 4] = vi + 1 + XCount_Vertices;
-                            triangles[ti + 5] = vi + XCount_Vertices;
+                            triangles[currentTriangleIndex + 3] = currentVertexIndex + 1;
+                            triangles[currentTriangleIndex + 4] = currentVertexIndex + 1 + XCount_Vertices;
+                            triangles[currentTriangleIndex + 5] = currentVertexIndex + XCount_Vertices;
                         }
                         else
                         {
-                            triangles[ti + 2] = vi;
-                            triangles[ti + 1] = vi + 1;
-                            triangles[ti + 0] = vi + XCount_Vertices;
+                            triangles[currentTriangleIndex + 2] = currentVertexIndex;
+                            triangles[currentTriangleIndex + 1] = currentVertexIndex + 1;
+                            triangles[currentTriangleIndex + 0] = currentVertexIndex + XCount_Vertices;
 
-                            triangles[ti + 5] = vi + 1;
-                            triangles[ti + 4] = vi + 1 + XCount_Vertices;
-                            triangles[ti + 3] = vi + XCount_Vertices;
+                            triangles[currentTriangleIndex + 5] = currentVertexIndex + 1;
+                            triangles[currentTriangleIndex + 4] = currentVertexIndex + 1 + XCount_Vertices;
+                            triangles[currentTriangleIndex + 3] = currentVertexIndex + XCount_Vertices;
                         }
                     }
                 }
             }
         }
 
-        GeneratedMesh.vertices = vertices;
-        GeneratedMesh.triangles = triangles;
+        GeneratedMesh.SetVertices(vertices);
+        GeneratedMesh.SetTriangles(triangles,0);
         GeneratedMesh.RecalculateNormals();
-        GeneratedMesh.uv = uvs;
+        GeneratedMesh.SetUVs(0,uvs);
 
         Changed = true;
     }
 
+
+    
     #endregion
 }
