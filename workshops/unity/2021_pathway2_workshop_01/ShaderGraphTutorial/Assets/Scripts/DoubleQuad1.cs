@@ -1,0 +1,146 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof(MeshRenderer), typeof(MeshFilter))]
+[ExecuteAlways]
+public class DoubleQuad1 : MonoBehaviour
+{
+    #region Public Variables
+
+    public Direction direction = Direction.ForwardFacing;
+    
+    public Mesh GeneratedMesh;
+
+    #endregion
+    
+    #region Private Variables
+    
+    private MeshFilter mf;
+    private bool changed = false;
+
+    #endregion
+
+    #region MonoBehavior Methods
+    
+    void Awake()
+    {
+        gameObject.GetComponent<MeshRenderer>().material = Resources.Load("Material/Standard", typeof(Material)) as Material;
+        Generate();
+    }
+    
+    private void OnValidate()
+    {
+        Generate();
+    }
+    
+    private void Update()
+    {
+        if (mf == null) mf = GetComponent<MeshFilter>();
+
+        if (changed)
+        {
+            mf.sharedMesh = new Mesh();
+            mf.sharedMesh.vertices = GeneratedMesh.vertices;
+            mf.sharedMesh.triangles = GeneratedMesh.triangles;
+            mf.sharedMesh.uv = GeneratedMesh.uv;
+            mf.sharedMesh.normals = GeneratedMesh.normals;
+            mf.sharedMesh.name = GeneratedMesh.name;
+            changed = false;
+        }
+    }
+
+    #endregion
+
+    #region Custom methods
+
+    private void Generate()
+    {
+        Mesh mesh = new Mesh();
+        
+        // Vertex array
+        Vector3[] vertices = new Vector3[]
+        {
+            new Vector3(0, 0, 0),
+            new Vector3(1, 0, 0),
+            new Vector3(0, 1, 0),
+            new Vector3(1, 1, 0),
+            new Vector3(0, 1, 0),
+            new Vector3(1, 1, 0),
+            new Vector3(0, 1, 1),
+            new Vector3(1, 1, 1)
+        };
+        mesh.vertices = vertices;
+        
+        // Triangles
+        if (direction == Direction.ForwardFacing)
+        {
+            int[] triangles = new int[]
+            {
+                0, 2, 1,
+                2, 3, 1,
+                4, 6, 5,
+                6, 7, 5
+            };
+            mesh.triangles = triangles; 
+        }
+        else
+        {
+            int[] triangles = new int[]
+            {
+                0, 1, 2,
+                2, 1, 3,
+                4, 5, 6,
+                6, 5, 7
+            };
+            mesh.triangles = triangles; 
+        }
+        
+        if (direction == Direction.ForwardFacing)
+        {
+            Vector3[] normals = new Vector3[]
+            {
+                -Vector3.forward,
+                -Vector3.forward,
+                -Vector3.forward,
+                -Vector3.forward,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up,
+                Vector3.up
+            };
+            mesh.normals = normals;
+        }
+        else
+        {
+            Vector3[] normals = new Vector3[]
+            {
+                Vector3.forward,
+                Vector3.forward,
+                Vector3.forward,
+                Vector3.forward,
+                -Vector3.up,
+                -Vector3.up,
+                -Vector3.up,
+                -Vector3.up
+            };
+            mesh.normals = normals;
+        }
+        
+        // // Texture coordinates
+        // Vector2[] uv = new Vector2[]
+        // {
+        //     new Vector2(0, 0),
+        //     new Vector2(1, 0),
+        //     new Vector2(0, 1),
+        //     new Vector2(1, 1)
+        // };
+        // mesh.uv = uv;
+        mesh.name = "SimpleQuad";
+
+        GeneratedMesh = mesh;
+        changed = true;
+    }
+    
+    #endregion
+}
