@@ -28,7 +28,7 @@ public class SimpleQuad : MonoBehaviour
     
     private MeshFilter mf;
     private bool changed = false;
-    
+
     #endregion
 
     #region MonoBehavior Methods
@@ -98,14 +98,28 @@ public class SimpleQuad : MonoBehaviour
             mesh.triangles = triangles; 
         }
         
-        Vector3[] normals = new Vector3[]
+        if (direction == Direction.ForwardFacing)
         {
-            -Vector3.forward,
-            -Vector3.forward,
-            -Vector3.forward,
-            -Vector3.forward
-        };
-        mesh.normals = normals;
+            Vector3[] normals = new Vector3[]
+            {
+                -Vector3.forward,
+                -Vector3.forward,
+                -Vector3.forward,
+                -Vector3.forward
+            };
+            mesh.normals = normals;
+        }
+        else
+        {
+            Vector3[] normals = new Vector3[]
+            {
+                Vector3.forward,
+                Vector3.forward,
+                Vector3.forward,
+                Vector3.forward
+            };
+            mesh.normals = normals;
+        }
         
         // Texture coordinates
         Vector2[] uv = new Vector2[]
