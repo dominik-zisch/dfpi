@@ -56,8 +56,9 @@ public class ArduinoEventReceiver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (_arduino == null) return;
-        
+        if (_arduino == null)
+            _arduino = GameObject.Find("Arduino").GetComponent<ArduinoHandler>();
+
         _arduino.RegisterListener(OnDataReceive);
     }
 

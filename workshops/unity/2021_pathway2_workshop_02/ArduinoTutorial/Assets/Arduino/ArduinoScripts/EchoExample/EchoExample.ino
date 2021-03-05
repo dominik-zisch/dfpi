@@ -151,7 +151,7 @@ void sendInt3(int cmd, long i1, long i2, long i3)
 
 //--------------------------------------------------------//
 //------------------------------------------// Send 2 Floats
-void sendFloat2(int cmd, float f1, float f2)
+void sendVector2(int cmd, float f1, float f2)
 {
   uint8_t buffer[8];
   copyFloatToBuf(f1, buffer, 0);
@@ -162,7 +162,7 @@ void sendFloat2(int cmd, float f1, float f2)
 
 //--------------------------------------------------------//
 //------------------------------------------// Send 3 Floats
-void sendFloat3(int cmd, float f1, float f2, float f3)
+void sendVector3(int cmd, float f1, float f2, float f3)
 {
   uint8_t buffer[12];
   copyFloatToBuf(f1, buffer, 0);
@@ -174,7 +174,7 @@ void sendFloat3(int cmd, float f1, float f2, float f3)
 
 //--------------------------------------------------------//
 //------------------------------------------// Send 4 Floats
-void sendFloat4(int cmd, float f1, float f2, float f3, float f4)
+void sendVector4(int cmd, float f1, float f2, float f3, float f4)
 {
   uint8_t buffer[16];
   copyFloatToBuf(f1, buffer, 0);
@@ -337,7 +337,7 @@ void parseData()
       float f1 = getFloatFromBuf(dataPacket, 0);
       float f2 = getFloatFromBuf(dataPacket, 4);
       // use the floats here
-      sendFloat2(cmd, f1, f2);
+      sendVector2(cmd, f1, f2);
     }
       break;
     case 9: // float3
@@ -346,7 +346,7 @@ void parseData()
       float f2 = getFloatFromBuf(dataPacket, 4);
       float f3 = getFloatFromBuf(dataPacket, 8);
       // use the floats here
-      sendFloat3(cmd, f1, f2, f3);
+      sendVector3(cmd, f1, f2, f3);
     }
       break;
     case 10: // float4
@@ -356,7 +356,7 @@ void parseData()
       float f3 = getFloatFromBuf(dataPacket, 8);
       float f4 = getFloatFromBuf(dataPacket, 12);
       // use the floats here
-      sendFloat4(cmd, f1, f2, f3, f4);
+      sendVector4(cmd, f1, f2, f3, f4);
     }
       break;
     default:

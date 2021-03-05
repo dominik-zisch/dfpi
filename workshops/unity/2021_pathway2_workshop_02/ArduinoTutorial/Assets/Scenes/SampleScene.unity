@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2094388440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _arduino: {fileID: 181466440}
   _command: 1
-  _dataType: 10
+  _dataType: 3
   _bytesReceived:
     m_PersistentCalls:
       m_Calls: []
@@ -962,7 +962,7 @@ MonoBehaviour:
   _framerate: 30
   _command: 1
   _dataSource: {fileID: 2094388443}
-  _propertyName: SendBool
+  _propertyName: SendInt
 --- !u!114 &2094388442
 MonoBehaviour:
   m_ObjectHideFlags: 0

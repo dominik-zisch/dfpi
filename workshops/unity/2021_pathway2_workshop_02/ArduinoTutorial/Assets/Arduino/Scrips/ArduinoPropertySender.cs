@@ -45,6 +45,8 @@ public class ArduinoPropertySender : MonoBehaviour
     
     void Start()
     {
+        if (_arduino == null)
+            _arduino = GameObject.Find("Arduino").GetComponent<ArduinoHandler>();
         UpdateSettings();
     }
 
