@@ -33,9 +33,9 @@ typedef union                       // Used for float to byte conversion
 //  05 - string
 //  06 - int2
 //  07 - int3
-//  08 - float2
-//  09 - float3
-//  10 - float4
+//  08 - vector2
+//  09 - vector3
+//  10 - vector4
 
 //============================================================================//
 //========================================================// Serial Declarations

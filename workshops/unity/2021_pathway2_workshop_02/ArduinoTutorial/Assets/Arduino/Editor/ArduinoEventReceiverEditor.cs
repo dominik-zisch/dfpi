@@ -22,9 +22,9 @@ public class ArduinoEventReceiverEditor : Editor
     SerializedProperty _stringReceived;
     SerializedProperty _int2Received;
     SerializedProperty _int3Received;
-    SerializedProperty _float2Received;
-    SerializedProperty _float3Received;
-    SerializedProperty _float4Received;
+    SerializedProperty _vector2Received;
+    SerializedProperty _vector3Received;
+    SerializedProperty _vector4Received;
 
     static class Labels
     {
@@ -45,9 +45,9 @@ public class ArduinoEventReceiverEditor : Editor
         _stringReceived = serializedObject.FindProperty("_stringReceived");
         _int2Received = serializedObject.FindProperty("_int2Received");
         _int3Received = serializedObject.FindProperty("_int3Received");
-        _float2Received = serializedObject.FindProperty("_float2Received");
-        _float3Received = serializedObject.FindProperty("_float3Received");
-        _float4Received = serializedObject.FindProperty("_float4Received");
+        _vector2Received = serializedObject.FindProperty("_vector2Received");
+        _vector3Received = serializedObject.FindProperty("_vector3Received");
+        _vector4Received = serializedObject.FindProperty("_vector4Received");
     }
     
     public override void OnInspectorGUI()
@@ -83,14 +83,14 @@ public class ArduinoEventReceiverEditor : Editor
                 case ArduinoDataType.Int3:
                     EditorGUILayout.PropertyField(_int3Received);
                     break;
-                case ArduinoDataType.Float2:
-                    EditorGUILayout.PropertyField(_float2Received);
+                case ArduinoDataType.Vector2:
+                    EditorGUILayout.PropertyField(_vector2Received);
                     break;
-                case ArduinoDataType.Float3:
-                    EditorGUILayout.PropertyField(_float3Received);
+                case ArduinoDataType.Vector3:
+                    EditorGUILayout.PropertyField(_vector3Received);
                     break;
-                case ArduinoDataType.Float4:
-                    EditorGUILayout.PropertyField(_float4Received);
+                case ArduinoDataType.Vector4:
+                    EditorGUILayout.PropertyField(_vector4Received);
                     break;
             }
         }

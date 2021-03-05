@@ -28,9 +28,9 @@ using UnityEngine.Events;
 //  05 - string
 //  06 - int2
 //  07 - int3
-//  08 - float2
-//  09 - float3
-//  10 - float4
+//  08 - Vector2
+//  09 - Vector3
+//  10 - Vector4
 
 
 /// <summary>
@@ -45,9 +45,9 @@ public enum ArduinoDataType
     String = 5,
     Int2 = 6,
     Int3 = 7,
-    Float2 = 8,
-    Float3 = 9,
-    Float4 = 10
+    Vector2 = 8,
+    Vector3 = 9,
+    Vector4 = 10
 };
 
 
@@ -243,7 +243,7 @@ public class ArduinoHandler : MonoBehaviour
         byte[] bytes = new byte[8];
         Array.Copy(BitConverter.GetBytes(v.x), 0, bytes, 0, 4);
         Array.Copy(BitConverter.GetBytes(v.y), 0, bytes, 4, 4);
-        Send(cmd, ArduinoDataType.Float2, bytes);
+        Send(cmd, ArduinoDataType.Vector2, bytes);
     }
 
     public void SendVector3(int cmd, Vector3 v)
@@ -252,7 +252,7 @@ public class ArduinoHandler : MonoBehaviour
         Array.Copy(BitConverter.GetBytes(v.x), 0, bytes, 0, 4);
         Array.Copy(BitConverter.GetBytes(v.y), 0, bytes, 4, 4);
         Array.Copy(BitConverter.GetBytes(v.z), 0, bytes, 8, 4);
-        Send(cmd, ArduinoDataType.Float3, bytes);
+        Send(cmd, ArduinoDataType.Vector3, bytes);
     }
 
     public void SendVector4(int cmd, Vector4 v)
@@ -262,7 +262,7 @@ public class ArduinoHandler : MonoBehaviour
         Array.Copy(BitConverter.GetBytes(v.y), 0, bytes, 4, 4);
         Array.Copy(BitConverter.GetBytes(v.z), 0, bytes, 8, 4);
         Array.Copy(BitConverter.GetBytes(v.w), 0, bytes, 12, 4);
-        Send(cmd, ArduinoDataType.Float4, bytes);
+        Send(cmd, ArduinoDataType.Vector4, bytes);
     }
 
 

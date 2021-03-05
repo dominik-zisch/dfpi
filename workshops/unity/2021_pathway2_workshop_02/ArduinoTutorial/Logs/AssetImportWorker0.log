@@ -100,3 +100,113 @@ System memory in use after: 107.4 MB.
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1560.
 Total: 1.270002 ms (FindLiveObjects: 0.133698 ms CreateObjectMapping: 0.032517 ms MarkObjects: 1.059949 ms  DeleteObjects: 0.042979 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 478.197668 seconds.
+  path: Assets/Arduino/ArduinoScripts/CompassExample
+  artifactKey: Guid(a7555fbd84a4c4daaa5188bfe0020fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/ArduinoScripts/CompassExample using Guid(a7555fbd84a4c4daaa5188bfe0020fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8636f7d42266ce14e532f336adab31') in 0.002832 seconds
+  Import took 0.004566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.339689 seconds.
+  path: Assets/Arduino/Scrips/ArduinoEventReceiver.cs
+  artifactKey: Guid(2e568081d00494c259c388bdb94da657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Scrips/ArduinoEventReceiver.cs using Guid(2e568081d00494c259c388bdb94da657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3959e50e1dc26e9c4775766127d247f6') in 0.212101 seconds
+  Import took 0.214913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.372537 seconds.
+  path: Assets/Arduino/Scrips/ArduinoHandler.cs
+  artifactKey: Guid(eaa4ef0661a374cf3a41f02d87e0e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Scrips/ArduinoHandler.cs using Guid(eaa4ef0661a374cf3a41f02d87e0e9c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff85cc11c073db2eb2e0603342d0ac8') in 0.046571 seconds
+  Import took 0.048276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.762439 seconds.
+  path: Assets/Arduino/Scrips/ArduinoPropertySender.cs
+  artifactKey: Guid(b61fb7c52c7454740a8b249c85dd44c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Scrips/ArduinoPropertySender.cs using Guid(b61fb7c52c7454740a8b249c85dd44c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896d5d5deff77f6ca8eacb4ee4cad90e') in 0.007364 seconds
+  Import took 0.009698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 155.149900 seconds.
+  path: Assets/Arduino/Editor/ArduinoEventReceiverEditor.cs
+  artifactKey: Guid(dec9c6ae075bc4a708f1484d84d92036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Editor/ArduinoEventReceiverEditor.cs using Guid(dec9c6ae075bc4a708f1484d84d92036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc20cd0664b61ae3db6a74024b56743d') in 0.003048 seconds
+  Import took 0.004578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001944 seconds.
+  path: Assets/Arduino/Editor/ArduinoEventReceiverEditor.cs
+  artifactKey: Guid(dec9c6ae075bc4a708f1484d84d92036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Editor/ArduinoEventReceiverEditor.cs using Guid(dec9c6ae075bc4a708f1484d84d92036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc20cd0664b61ae3db6a74024b56743d') in 0.003122 seconds
+  Import took 0.004579 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.741361 seconds.
+  path: Assets/Arduino/Editor/ArduinoPropertySenderEditor.cs
+  artifactKey: Guid(373e0df7ee9e54f0aac7a8d3345146da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Editor/ArduinoPropertySenderEditor.cs using Guid(373e0df7ee9e54f0aac7a8d3345146da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df819fd809a1c62333d2d508ce827484') in 0.003390 seconds
+  Import took 0.005358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/Arduino/Editor/ArduinoPropertySenderEditor.cs
+  artifactKey: Guid(373e0df7ee9e54f0aac7a8d3345146da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Arduino/Editor/ArduinoPropertySenderEditor.cs using Guid(373e0df7ee9e54f0aac7a8d3345146da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df819fd809a1c62333d2d508ce827484') in 0.003694 seconds
+  Import took 0.005747 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 111.9 MB.
+System memory in use after: 112.0 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1562.
+Total: 1.321429 ms (FindLiveObjects: 0.172880 ms CreateObjectMapping: 0.035454 ms MarkObjects: 1.072776 ms  DeleteObjects: 0.039411 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000353 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.759 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.1 MB.
+System memory in use after: 112.2 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 1564.
+Total: 1.748641 ms (FindLiveObjects: 0.217855 ms CreateObjectMapping: 0.042001 ms MarkObjects: 1.404731 ms  DeleteObjects: 0.081961 ms)
+

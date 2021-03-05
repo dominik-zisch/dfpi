@@ -22,9 +22,9 @@ public class ArduinoEventReceiver : MonoBehaviour
     [System.Serializable] class StringReceived : UnityEvent<string> {}
     [System.Serializable] class Int2Received : UnityEvent<Vector2Int> {}
     [System.Serializable] class Int3Received : UnityEvent<Vector3Int> {}
-    [System.Serializable] class Float2Received : UnityEvent<Vector2> {}
-    [System.Serializable] class Float3Received : UnityEvent<Vector3> {}
-    [System.Serializable] class Float4Received : UnityEvent<Vector4> {}
+    [System.Serializable] class Vector2Received : UnityEvent<Vector2> {}
+    [System.Serializable] class Vector3Received : UnityEvent<Vector3> {}
+    [System.Serializable] class Vector4Received : UnityEvent<Vector4> {}
     
     #endregion
     
@@ -41,9 +41,9 @@ public class ArduinoEventReceiver : MonoBehaviour
     [SerializeField] StringReceived _stringReceived = null;
     [SerializeField] Int2Received _int2Received = null;
     [SerializeField] Int3Received _int3Received = null;
-    [SerializeField] Float2Received _float2Received = null;
-    [SerializeField] Float3Received _float3Received = null;
-    [SerializeField] Float4Received _float4Received = null;
+    [SerializeField] Vector2Received _vector2Received = null;
+    [SerializeField] Vector3Received _vector3Received = null;
+    [SerializeField] Vector4Received _vector4Received = null;
     
     #endregion
     
@@ -116,29 +116,29 @@ public class ArduinoEventReceiver : MonoBehaviour
                 BitConverter.ToInt32(data.buffer, 8));
             _int3Received.Invoke(v);
         }
-        else if (_dataType == ArduinoDataType.Float2)
+        else if (_dataType == ArduinoDataType.Vector2)
         {
             Vector2 v = new Vector2(
                 BitConverter.ToSingle(data.buffer, 0),
                 BitConverter.ToSingle(data.buffer, 4));
-            _float2Received.Invoke(v);
+            _vector2Received.Invoke(v);
         }
-        else if (_dataType == ArduinoDataType.Float3)
+        else if (_dataType == ArduinoDataType.Vector3)
         {
             Vector3 v = new Vector3(
                 BitConverter.ToSingle(data.buffer, 0),
                 BitConverter.ToSingle(data.buffer, 4),
                 BitConverter.ToSingle(data.buffer, 8));
-            _float3Received.Invoke(v);
+            _vector3Received.Invoke(v);
         }
-        else if (_dataType == ArduinoDataType.Float4)
+        else if (_dataType == ArduinoDataType.Vector4)
         {
             Vector4 v = new Vector4(
                 BitConverter.ToSingle(data.buffer, 0),
                 BitConverter.ToSingle(data.buffer, 4),
                 BitConverter.ToSingle(data.buffer, 8),
                 BitConverter.ToSingle(data.buffer, 12));
-            _float4Received.Invoke(v);
+            _vector4Received.Invoke(v);
         }
     }
     
